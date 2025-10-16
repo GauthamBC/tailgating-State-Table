@@ -1,0 +1,614 @@
+<section id="tailgating-cities">
+<!-- Datawrapper-style table (black header + gold stripes) -->
+<div id="dw-lottery-3" data-dw="table"
+     style="--logo-h:34px;
+            --stripe:#F2C23A;              /* gold zebra */
+            --hover:#F7DB7A;               /* gold hover */
+            --header-bg:#000000;           /* black header */
+            --header-fg:#ffffff;
+            --scroll-track:#f7f8fb; 
+            --scroll-thumb:#000000; 
+            --scroll-thumb-hover:#333333;
+            --gutter: clamp(8px, 4vw, 14px);
+            --gutter-left: var(--gutter);
+            --gutter-right: var(--gutter); 
+            --edge-pad: 14px;
+            --table-max-h: 500px;
+            --vbar-w: 6px; --vbar-w-hover: 8px;">
+  <style>
+  /* ===== Datawrapper-style table (black + gold theme) ===== */
+  #dw-lottery-3{
+    /* Brand palette (gold + black) */
+    --brand-50:#FFF7DC; 
+    --brand-100:#FFE8AA;
+    --brand-500:#F2C23A; 
+    --brand-600:#D9A72A; 
+    --brand-700:#B9851A; 
+    --brand-900:#111111;
+
+    --bg:#ffffff; --text:#1f2937;
+    box-sizing:border-box; overflow-x:hidden; display:block; max-width:100%;
+    padding-left:var(--gutter-left,var(--gutter));
+    padding-right:var(--gutter-right,var(--gutter));
+  }
+
+  /* Controls layout */
+  #dw-lottery-3 .dw-controls{
+    display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+    gap:12px; margin:2px 0 10px 0;
+  }
+  #dw-lottery-3 .left{display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-start}
+  #dw-lottery-3 .center{justify-self:center; display:flex; align-items:center}
+  #dw-lottery-3 .right{display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+
+  #dw-lottery-3 .dw-field{position:relative}
+  #dw-lottery-3 .dw-input,#dw-lottery-3 .dw-select,#dw-lottery-3 .dw-btn{
+    font:14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; border-radius:10px; padding:8px 10px; transition:.15s ease;
+  }
+  #dw-lottery-3 .dw-input,#dw-lottery-3 .dw-select{
+    background:#fff;
+    border:1px solid var(--brand-900);         /* black border */
+    color:var(--text); box-shadow:inset 0 1px 2px rgba(16,24,40,.04);
+  }
+  #dw-lottery-3 .dw-input{width:min(320px,100%); padding-right:36px}
+  #dw-lottery-3 .dw-input::placeholder{color:#9AA4B2}
+  #dw-lottery-3 .dw-input:focus,#dw-lottery-3 .dw-select:focus{
+    outline:none; border-color:var(--brand-900);
+    box-shadow:0 0 0 3px color-mix(in oklab,var(--brand-900) 25%,transparent); background:#fff;
+  }
+  #dw-lottery-3 .dw-select{
+    appearance:none; padding-right:34px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23111111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right 10px center; background-size:14px;
+  }
+  #dw-lottery-3 .dw-btn{background:var(--brand-900); color:#fff; border:1px solid var(--brand-900); padding-inline:12px; cursor:pointer}
+  #dw-lottery-3 .dw-btn:hover{background:#222; border-color:#222} 
+  #dw-lottery-3 .dw-btn:active{transform:translateY(1px)}
+  #dw-lottery-3 .dw-btn[disabled]{background:#fafafa; border-color:#d1d5db; color:#6b7280; opacity:1; cursor:not-allowed; transform:none}
+  #dw-lottery-3 .dw-status{font:12px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:#6b7280}
+  #dw-lottery-3 .dw-counter{display:none !important;}
+
+  /* Clear button */
+  #dw-lottery-3 .dw-clear{
+    position:absolute; right:10px; top:50%; translate:0 -50%; width:22px; height:22px; border-radius:9999px; border:0;
+    background:transparent; color:var(--brand-900); cursor:pointer; display:none; align-items:center; justify-content:center;
+  }
+  #dw-lottery-3 .dw-field.has-value .dw-clear{display:flex}
+  #dw-lottery-3 .dw-clear:hover{background:var(--brand-50)}
+
+  /* ===== Top-center logo (kept; fills with header colour if you want) ===== */
+  #dw-lottery-3 .dw-top-brand{display:none; align-items:center}
+  #dw-lottery-3 .dw-top-logo{
+    display:block;
+    width:200px; height:24px;
+    background:var(--header-bg);               /* set to black to match header */
+    -webkit-mask: var(--logo-url) no-repeat center / contain;
+            mask: var(--logo-url) no-repeat center / contain;
+  }
+
+  /* Card & table */
+ /* Card & table */
+#dw-lottery-3 .dw-card {
+  background: var(--bg);
+  border: 0;
+  box-shadow: none;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+
+/* Default scroll for wide tables */
+#dw-lottery-3 .dw-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Disable horizontal scroll if 4 or fewer columns */
+#dw-lottery-3 .dw-scroll.no-scroll {
+  overflow-x: hidden !important;
+}
+#dw-lottery-3 table.dw-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  background: transparent;
+
+  /* ✅ Allow natural column sizing + horizontal scroll */
+  min-width: 1200px;
+  table-layout: auto;
+}
+
+
+  /* Header */
+  #dw-lottery-3 thead th{
+    background:var(--header-bg); color:var(--header-fg,#fff); font-weight:700; text-align:center;
+    padding:12px 14px; white-space:nowrap; vertical-align:middle; border:0;
+    transition:background-color .15s, color .15s, box-shadow .15s, transform .05s;
+  }
+  #dw-lottery-3 thead th.sortable{cursor:pointer; user-select:none}
+  #dw-lottery-3 thead th.sortable::after{content:"↕"; font-size:12px; opacity:.75; margin-left:8px; color:var(--header-fg,#fff)}
+  #dw-lottery-3 thead th.sortable[data-sort="asc"]::after{content:"▲"}
+  #dw-lottery-3 thead th.sortable[data-sort="desc"]::after{content:"▼"}
+  #dw-lottery-3 thead th.sortable:hover,#dw-lottery-3 thead th.sortable:focus-visible{background:#222; color:#fff; box-shadow:inset 0 -3px 0 var(--brand-500)}
+  #dw-lottery-3 .dw-scroll.scrolled thead th{box-shadow:0 6px 10px -6px rgba(0,0,0,.25)}
+  #dw-lottery-3 .dw-scroll.scrolled thead th.sortable:hover,#dw-lottery-3 .dw-scroll.scrolled thead th.sortable:focus-visible{box-shadow:inset 0 -3px 0 var(--brand-500),0 6px 10px -6px rgba(0,0,0,.25)}
+  #dw-lottery-3 thead th.is-sorted{background:#1a1a1a; color:#fff; box-shadow:inset 0 -3px 0 var(--brand-500)}
+
+/* Allow text wrapping only for the State column, keep headers tidy */
+#dw-lottery-3 thead th,
+#dw-lottery-3 tbody td {
+  padding: 12px 10px;
+  overflow: hidden;
+}
+
+/* Keep headers on one line */
+#dw-lottery-3 thead th {
+  white-space: nowrap;
+}
+
+/* ✅ Only wrap multi-word states over 2–3 lines */
+#dw-lottery-3 tbody td:nth-child(2) {
+  white-space: normal;          
+  word-break: keep-all;         
+  overflow-wrap: break-word;
+  min-width: 100px;
+  max-width: 220px;            
+  line-height: 1.3;
+}
+
+/* Prevent Chrome re-paint duplication bug */
+#dw-lottery-3 tbody td {
+  background-clip: padding-box;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+  /* Body */
+  #dw-lottery-3 tbody td{ text-align:center; vertical-align:middle; background:transparent!important; border:0; transition:background-color .12s }
+  #dw-lottery-3 thead th:last-child,#dw-lottery-3 tbody td:last-child{padding-right:14px}
+  #dw-lottery-3 tbody tr:nth-child(odd){background:var(--stripe,#F2C23A)}  /* gold stripes */
+  #dw-lottery-3 tbody tr:hover{background:var(--hover,#F7DB7A); box-shadow:inset 3px 0 0 var(--brand-900)}
+  #dw-lottery-3 thead th{position:sticky; top:var(--sticky-top,0); z-index:5}
+
+  /* Scrollbar + height */
+  #dw-lottery-3 .dw-scroll{max-height:var(--table-max-h,360px); overflow-y:auto; -ms-overflow-style:auto; scrollbar-width:thin; scrollbar-color:var(--scroll-thumb) transparent}
+  #dw-lottery-3 .dw-scroll::-webkit-scrollbar:horizontal{height:0; display:none}
+  #dw-lottery-3 .dw-scroll::-webkit-scrollbar:vertical{width:var(--vbar-w)}
+  #dw-lottery-3 .dw-scroll:hover::-webkit-scrollbar:vertical{width:var(--vbar-w-hover)}
+  #dw-lottery-3 .dw-scroll::-webkit-scrollbar-thumb{background:var(--scroll-thumb); border-radius:9999px; border:2px solid transparent; background-clip:content-box}
+
+  /* Dynamic zebra */
+  #dw-lottery-3 tbody tr{background:transparent!important}
+  #dw-lottery-3 tbody tr.dw-zebra{background:var(--stripe,#F2C23A)!important}
+  #dw-lottery-3 tbody td.is-sorted{background:var(--hover,#F7DB7A)!important; font-weight:600}
+
+  /* Empty-state row */
+  #dw-lottery-3 tr.dw-empty td{text-align:center; color:#6b7280; font-style:italic; padding:18px 14px; background:linear-gradient(0deg,#fff,var(--brand-50))}
+
+  /* Footer (brand name left; optional) */
+  #dw-lottery-3 .dw-footer{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    padding:10px 0; margin-top:10px; color:#6b7280;
+    font:12px/1.25 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    box-shadow:0 -1px 0 0 color-mix(in oklab,var(--brand-900) 35%, transparent);
+  }
+  #dw-lottery-3 .dw-brand-left{
+    display:none; color:inherit; text-decoration:none; font-weight:600;
+    border-bottom:1px dashed transparent; transition:color .15s, border-color .15s;
+  }
+  #dw-lottery-3 .dw-brand-left:is(:hover,:focus-visible){color:var(--brand-700); border-color:var(--brand-700); outline:none}
+
+  /* === Mobile one-line controls (keep logo visible) === */
+  @media (max-width: 600px){
+    #dw-lottery-3 .dw-controls{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto auto;
+      align-items:center; column-gap:8px; row-gap:0; margin:6px 0 8px;
+    }
+    #dw-lottery-3 .left, #dw-lottery-3 .center, #dw-lottery-3 .right{min-width:0;}
+    #dw-lottery-3 .dw-field{width:100%; max-width:46vw;}
+    #dw-lottery-3 .dw-input{width:100%; padding:6px 24px 6px 10px; height:34px; font-size:13px;}
+    #dw-lottery-3 .dw-clear{width:20px; height:20px;}
+    #dw-lottery-3 thead th{ font-size:13px; line-height:1.2; } /* tighter header on small screens */
+    #dw-lottery-3 .dw-top-logo{height:22px; width:120px;}
+    #dw-lottery-3 .right{justify-content:flex-end; gap:6px;}
+    #dw-lottery-3 .right .dw-status{display:none;}
+    #dw-lottery-3 .dw-select{min-width:68px; height:32px; padding:6px 22px 6px 8px; font-size:13px;}
+    #dw-lottery-3 .dw-btn{width:32px; height:32px; padding:0; border-radius:12px; display:inline-flex; align-items:center; justify-content:center;}
+  }
+  </style>
+
+  <!-- Controls -->
+  <div class="dw-controls">
+    <div class="left">
+      <div class="dw-field">
+        <input type="search" class="dw-input" placeholder="Search table…" aria-label="Search table">
+        <button type="button" class="dw-clear" aria-label="Clear search">×</button>
+      </div>
+      <span class="dw-status dw-counter" aria-live="polite"></span>
+    </div>
+
+    <!-- Center: NOT clickable logo -->
+    <div class="center">
+      <div class="dw-top-brand" aria-label="Brand">
+        <div class="dw-top-logo" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="right">
+      <label class="dw-status" for="dw-size" style="margin-right:4px;">Rows/page</label>
+      <select id="dw-size" class="dw-select">
+        <option value="10" selected>10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="0">All</option>
+      </select>
+      <button class="dw-btn" data-page="prev" aria-label="Previous page">‹</button>
+      <button class="dw-btn" data-page="next" aria-label="Next page">›</button>
+    </div>
+  </div>
+
+  <div class="dw-card">
+    <div class="dw-scroll">
+      <table class="dw-table">
+        <thead>
+          <tr>
+            <th scope="col" data-type="num">Rank</th>
+            <th scope="col" data-type="text">City</th>
+            <th scope="col" data-type="num">Tailgating Score (/100)</th>
+            <th scope="col" data-type="num">Beer ($/6-pack)</th>
+            <th scope="col" data-type="num">BBQ Fuel Cost ($/bag)</th>
+            <th scope="col" data-type="num">Meat Price ($/lb)</th>
+            <th scope="col" data-type="num">Game-Day Parking ($)</th>
+            <th scope="col" data-type="num">Stadium Parking Spaces (Est.)</th>
+            <th scope="col" data-type="num">No. of CFB & NFL Teams</th>
+            <th scope="col" data-type="num">Fan Sentiment (Positive %)</th>
+            <th scope="col" data-type="num">Fan Interest (Monthly Searches)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Atlanta, GA</td><td>66.66</td><td>5.06</td><td>14.56</td><td>4.36</td><td>22.73</td><td>14295</td><td>3</td><td>59.05</td><td>1160</td></tr>
+          <tr><td>2</td><td>Clemson, SC</td><td>64.88</td><td>4.13</td><td>11.83</td><td>4.36</td><td>17.44</td><td>16979</td><td>1</td><td>74.8</td><td>500</td></tr>
+          <tr><td>3</td><td>Arlington, TX</td><td>64.45</td><td>5.43</td><td>13.86</td><td>4.36</td><td>48.39</td><td>9091</td><td>1</td><td>65.56</td><td>3140</td></tr>
+          <tr><td>4</td><td>Houston, TX</td><td>64.13</td><td>5.43</td><td>13.86</td><td>4.36</td><td>28.25</td><td>15429</td><td>3</td><td>44.97</td><td>1690</td></tr>
+          <tr><td>5</td><td>Orchard Park, NY</td><td>61.23</td><td>4.18</td><td>16.32</td><td>4.38</td><td>56.28</td><td>6952</td><td>1</td><td>67.14</td><td>2630</td></tr>
+          <tr><td>6</td><td>Athens, GA</td><td>60.08</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>19382</td><td>1</td><td>73.1</td><td>470</td></tr>
+          <tr><td>7</td><td>Philadelphia, PA</td><td>59.8</td><td>5.8</td><td>13.67</td><td>4.38</td><td>37.79</td><td>19217</td><td>2</td><td>46.4</td><td>1920</td></tr>
+          <tr><td>8</td><td>Oxford, MS</td><td>59.72</td><td>5.07</td><td>14.29</td><td>4.36</td><td>17.44</td><td>13341</td><td>1</td><td>77.6</td><td>550</td></tr>
+          <tr><td>9</td><td>College Station, TX</td><td>59.71</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>21403</td><td>1</td><td>70.3</td><td>520</td></tr>
+          <tr><td>10</td><td>Tuscaloosa, AL</td><td>59.12</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>20849</td><td>1</td><td>72.4</td><td>520</td></tr>
+          <tr><td>11</td><td>Baton Rouge, LA</td><td>59.07</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>9934</td><td>1</td><td>78.5</td><td>540</td></tr>
+          <tr><td>12</td><td>State College, PA</td><td>58.92</td><td>5.8</td><td>13.67</td><td>4.38</td><td>26.08</td><td>22202</td><td>1</td><td>75.0</td><td>510</td></tr>
+          <tr><td>13</td><td>Fayetteville, AR</td><td>58.69</td><td>4.86</td><td>10.59</td><td>4.36</td><td>17.44</td><td>15878</td><td>1</td><td>64.9</td><td>390</td></tr>
+          <tr><td>14</td><td>Denver, CO</td><td>58.59</td><td>4.87</td><td>10.45</td><td>4.62</td><td>30.21</td><td>7391</td><td>1</td><td>80.77</td><td>1480</td></tr>
+          <tr><td>15</td><td>Norman, OK</td><td>58.31</td><td>4.74</td><td>10.86</td><td>4.36</td><td>17.44</td><td>9105</td><td>1</td><td>70.8</td><td>480</td></tr>
+          <tr><td>16</td><td>Columbia, SC</td><td>57.67</td><td>4.13</td><td>11.83</td><td>4.36</td><td>17.44</td><td>7530</td><td>1</td><td>69.4</td><td>370</td></tr>
+          <tr><td>17</td><td>Stillwater, OK</td><td>57.28</td><td>4.74</td><td>10.86</td><td>4.36</td><td>17.44</td><td>10897</td><td>1</td><td>68.2</td><td>330</td></tr>
+          <tr><td>18</td><td>New Orleans, LA</td><td>57.0</td><td>5.4</td><td>11.83</td><td>4.36</td><td>24.21</td><td>10021</td><td>2</td><td>57.78</td><td>740</td></tr>
+          <tr><td>19</td><td>Pittsburgh, PA</td><td>56.81</td><td>5.8</td><td>13.67</td><td>4.38</td><td>36.11</td><td>13282</td><td>2</td><td>54.27</td><td>1430</td></tr>
+          <tr><td>20</td><td>Auburn, AL</td><td>56.76</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>18342</td><td>1</td><td>70.0</td><td>470</td></tr>
+          <tr><td>21</td><td>East Rutherford, NJ</td><td>56.64</td><td>5.21</td><td>17.31</td><td>4.38</td><td>55.2</td><td>18750</td><td>2</td><td>56.52</td><td>1450</td></tr>
+          <tr><td>22</td><td>Morgantown, WV</td><td>56.25</td><td>4.87</td><td>11.83</td><td>4.36</td><td>17.44</td><td>12500</td><td>1</td><td>65.8</td><td>350</td></tr>
+          <tr><td>23</td><td>Kansas City, MO</td><td>56.19</td><td>4.63</td><td>9.36</td><td>4.75</td><td>32.04</td><td>7419</td><td>1</td><td>69.63</td><td>2030</td></tr>
+          <tr><td>24</td><td>Austin, TX</td><td>55.33</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>9720</td><td>1</td><td>73.3</td><td>540</td></tr>
+          <tr><td>25</td><td>Starkville, MS</td><td>54.32</td><td>5.07</td><td>14.29</td><td>4.36</td><td>17.44</td><td>12565</td><td>1</td><td>66.7</td><td>360</td></tr>
+          <tr><td>26</td><td>Gainesville, FL</td><td>54.31</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>18448</td><td>1</td><td>71.2</td><td>400</td></tr>
+          <tr><td>27</td><td>Los Angeles, CA</td><td>53.71</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>17717</td><td>2</td><td>62.25</td><td>210</td></tr>
+          <tr><td>28</td><td>Blacksburg, VA</td><td>53.17</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>13673</td><td>1</td><td>62.0</td><td>310</td></tr>
+          <tr><td>29</td><td>Greenville, NC</td><td>53.16</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>14571</td><td>1</td><td>65.4</td><td>120</td></tr>
+          <tr><td>30</td><td>Knoxville, TN</td><td>52.88</td><td>6.01</td><td>14.27</td><td>4.36</td><td>22.72</td><td>9895</td><td>1</td><td>75.5</td><td>460</td></tr>
+          <tr><td>31</td><td>Minneapolis, MN</td><td>52.86</td><td>4.85</td><td>8.7</td><td>4.75</td><td>23.92</td><td>11404</td><td>2</td><td>54.2</td><td>1120</td></tr>
+          <tr><td>32</td><td>Green Bay, WI</td><td>52.75</td><td>4.91</td><td>8.7</td><td>4.75</td><td>51.64</td><td>7907</td><td>1</td><td>77.86</td><td>1580</td></tr>
+          <tr><td>33</td><td>Conway, SC</td><td>52.69</td><td>4.13</td><td>11.83</td><td>4.36</td><td>17.44</td><td>4375</td><td>1</td><td>63.9</td><td>130</td></tr>
+          <tr><td>34</td><td>Seattle, WA</td><td>51.73</td><td>5.57</td><td>11.83</td><td>4.62</td><td>25.06</td><td>13478</td><td>2</td><td>56.81</td><td>860</td></tr>
+          <tr><td>35</td><td>Tampa, FL</td><td>51.58</td><td>4.65</td><td>21.68</td><td>4.36</td><td>32.05</td><td>18538</td><td>2</td><td>49.89</td><td>570</td></tr>
+          <tr><td>36</td><td>Ann Arbor, MI</td><td>51.32</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>10447</td><td>1</td><td>73.7</td><td>450</td></tr>
+          <tr><td>37</td><td>Lexington, KY</td><td>50.96</td><td>5.11</td><td>11.92</td><td>4.36</td><td>17.44</td><td>5952</td><td>1</td><td>64.2</td><td>230</td></tr>
+          <tr><td>38</td><td>Huntington, WV</td><td>50.7</td><td>4.87</td><td>11.83</td><td>4.36</td><td>17.44</td><td>6349</td><td>1</td><td>61.8</td><td>160</td></tr>
+          <tr><td>39</td><td>Statesboro, GA</td><td>50.61</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>9091</td><td>1</td><td>66.3</td><td>130</td></tr>
+          <tr><td>40</td><td>Charlotte, NC</td><td>50.56</td><td>4.33</td><td>15.71</td><td>4.36</td><td>28.47</td><td>8756</td><td>2</td><td>45.74</td><td>470</td></tr>
+          <tr><td>41</td><td>Lubbock, TX</td><td>50.52</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5847</td><td>1</td><td>68.5</td><td>340</td></tr>
+          <tr><td>42</td><td>Boone, NC</td><td>50.52</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>6250</td><td>1</td><td>67.5</td><td>210</td></tr>
+          <tr><td>43</td><td>Lincoln, NE</td><td>50.11</td><td>4.99</td><td>7.75</td><td>4.75</td><td>17.44</td><td>8297</td><td>1</td><td>74.0</td><td>440</td></tr>
+          <tr><td>44</td><td>Raleigh, NC</td><td>49.88</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>5526</td><td>1</td><td>64.8</td><td>310</td></tr>
+          <tr><td>45</td><td>Louisville, KY</td><td>49.87</td><td>5.11</td><td>11.92</td><td>4.36</td><td>17.44</td><td>5903</td><td>1</td><td>61.3</td><td>220</td></tr>
+          <tr><td>46</td><td>West Point, NY</td><td>49.82</td><td>4.18</td><td>16.32</td><td>4.38</td><td>52.28</td><td>13818</td><td>1</td><td>69.2</td><td>160</td></tr>
+          <tr><td>47</td><td>Manhattan, KS</td><td>49.69</td><td>4.33</td><td>8.74</td><td>4.75</td><td>17.44</td><td>10417</td><td>1</td><td>68.9</td><td>270</td></tr>
+          <tr><td>48</td><td>Iowa City, IA</td><td>49.62</td><td>4.64</td><td>7.15</td><td>4.75</td><td>17.44</td><td>7869</td><td>1</td><td>70.4</td><td>350</td></tr>
+          <tr><td>49</td><td>Madison, WI</td><td>49.24</td><td>4.91</td><td>8.7</td><td>4.75</td><td>17.44</td><td>7384</td><td>1</td><td>75.0</td><td>380</td></tr>
+          <tr><td>50</td><td>Charlottesville, VA</td><td>49.14</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>12812</td><td>1</td><td>54.2</td><td>170</td></tr>
+          <tr><td>51</td><td>Ames, IA</td><td>48.92</td><td>4.64</td><td>7.15</td><td>4.75</td><td>17.44</td><td>12812</td><td>1</td><td>63.7</td><td>240</td></tr>
+          <tr><td>52</td><td>Chapel Hill, NC</td><td>48.84</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>5739</td><td>1</td><td>63.0</td><td>230</td></tr>
+          <tr><td>53</td><td>Tallahassee, FL</td><td>48.71</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>6532</td><td>1</td><td>71.0</td><td>420</td></tr>
+          <tr><td>54</td><td>South Bend, IN</td><td>48.45</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>7536</td><td>1</td><td>72.0</td><td>430</td></tr>
+          <tr><td>55</td><td>Hattiesburg, MS</td><td>48.44</td><td>5.07</td><td>14.29</td><td>4.36</td><td>17.44</td><td>10286</td><td>1</td><td>57.4</td><td>120</td></tr>
+          <tr><td>56</td><td>Fort Worth, TX</td><td>48.43</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>4563</td><td>1</td><td>66.1</td><td>240</td></tr>
+          <tr><td>57</td><td>Cincinnati, OH</td><td>48.42</td><td>5.13</td><td>12.24</td><td>4.75</td><td>23.7</td><td>10059</td><td>2</td><td>57.64</td><td>860</td></tr>
+          <tr><td>58</td><td>Colorado Springs, CO</td><td>48.34</td><td>4.87</td><td>10.45</td><td>4.62</td><td>22.84</td><td>11269</td><td>1</td><td>67.6</td><td>140</td></tr>
+          <tr><td>59</td><td>Bowling Green, KY</td><td>48.26</td><td>5.11</td><td>11.92</td><td>4.36</td><td>17.44</td><td>4607</td><td>1</td><td>59.2</td><td>180</td></tr>
+          <tr><td>60</td><td>Baltimore, MD</td><td>48.25</td><td>5.51</td><td>16.67</td><td>4.36</td><td>52.09</td><td>6868</td><td>1</td><td>70.19</td><td>990</td></tr>
+          <tr><td>61</td><td>Waco, TX</td><td>48.09</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5130</td><td>1</td><td>63.8</td><td>270</td></tr>
+          <tr><td>62</td><td>Harrisonburg, VA</td><td>47.8</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>5183</td><td>1</td><td>60.2</td><td>200</td></tr>
+          <tr><td>63</td><td>Provo, UT</td><td>47.71</td><td>4.93</td><td>10.74</td><td>4.62</td><td>17.44</td><td>7054</td><td>1</td><td>68.5</td><td>230</td></tr>
+          <tr><td>64</td><td>Ruston, LA</td><td>47.66</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>5950</td><td>1</td><td>59.0</td><td>120</td></tr>
+          <tr><td>65</td><td>Winston-Salem, NC</td><td>47.41</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>9000</td><td>1</td><td>56.5</td><td>120</td></tr>
+          <tr><td>66</td><td>Columbus, OH</td><td>47.37</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>9979</td><td>1</td><td>72.5</td><td>520</td></tr>
+          <tr><td>67</td><td>Columbia, MO</td><td>47.29</td><td>4.63</td><td>9.36</td><td>4.75</td><td>17.44</td><td>12838</td><td>1</td><td>62.9</td><td>260</td></tr>
+          <tr><td>68</td><td>Boulder, CO</td><td>47.24</td><td>4.87</td><td>10.45</td><td>4.62</td><td>22.84</td><td>5703</td><td>1</td><td>70.0</td><td>250</td></tr>
+          <tr><td>69</td><td>Salt Lake City, UT</td><td>47.13</td><td>4.93</td><td>10.74</td><td>4.62</td><td>17.44</td><td>4995</td><td>1</td><td>68.9</td><td>270</td></tr>
+          <tr><td>70</td><td>Lafayette, LA</td><td>47.01</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>2273</td><td>1</td><td>61.2</td><td>170</td></tr>
+          <tr><td>71</td><td>Jonesboro, AR</td><td>47.0</td><td>4.86</td><td>10.59</td><td>4.36</td><td>17.44</td><td>6335</td><td>1</td><td>49.2</td><td>130</td></tr>
+          <tr><td>72</td><td>East Lansing, MI</td><td>46.79</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>8508</td><td>1</td><td>65.4</td><td>340</td></tr>
+          <tr><td>73</td><td>Lynchburg, VA</td><td>46.59</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>2841</td><td>1</td><td>61.8</td><td>100</td></tr>
+          <tr><td>74</td><td>Tempe, AZ</td><td>46.47</td><td>4.37</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6091</td><td>1</td><td>61.7</td><td>310</td></tr>
+          <tr><td>75</td><td>Tulsa, OK</td><td>46.08</td><td>4.74</td><td>10.86</td><td>4.36</td><td>17.44</td><td>2913</td><td>1</td><td>51.2</td><td>100</td></tr>
+          <tr><td>76</td><td>Orlando, FL</td><td>45.95</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>4292</td><td>1</td><td>68.0</td><td>320</td></tr>
+          <tr><td>77</td><td>Lawrence, KS</td><td>45.94</td><td>4.33</td><td>8.74</td><td>4.75</td><td>17.44</td><td>8651</td><td>1</td><td>62.4</td><td>170</td></tr>
+          <tr><td>78</td><td>Boise, ID</td><td>45.85</td><td>5.07</td><td>11.05</td><td>4.62</td><td>17.44</td><td>3533</td><td>1</td><td>69.5</td><td>250</td></tr>
+          <tr><td>79</td><td>West Lafayette, IN</td><td>45.79</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>12800</td><td>1</td><td>60.9</td><td>230</td></tr>
+          <tr><td>80</td><td>Nashville, TN</td><td>45.77</td><td>6.01</td><td>14.27</td><td>4.36</td><td>26.36</td><td>10630</td><td>2</td><td>42.52</td><td>400</td></tr>
+          <tr><td>81</td><td>Jacksonville, AL</td><td>45.08</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>8182</td><td>1</td><td>57.2</td><td>100</td></tr>
+          <tr><td>82</td><td>San Antonio, TX</td><td>45.08</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>6214</td><td>1</td><td>56.1</td><td>140</td></tr>
+          <tr><td>83</td><td>Eugene, OR</td><td>44.76</td><td>5.63</td><td>11.83</td><td>4.62</td><td>17.04</td><td>5243</td><td>1</td><td>69.1</td><td>330</td></tr>
+          <tr><td>84</td><td>Corvallis, OR</td><td>44.74</td><td>5.63</td><td>11.83</td><td>4.62</td><td>17.04</td><td>7406</td><td>1</td><td>67.2</td><td>270</td></tr>
+          <tr><td>85</td><td>Indianapolis, IN</td><td>44.69</td><td>4.55</td><td>10.6</td><td>4.75</td><td>25.0</td><td>6505</td><td>1</td><td>61.45</td><td>680</td></tr>
+          <tr><td>86</td><td>Coral Gables, FL</td><td>44.51</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>7360</td><td>1</td><td>61.0</td><td>250</td></tr>
+          <tr><td>87</td><td>Logan, UT</td><td>44.5</td><td>4.93</td><td>10.74</td><td>4.62</td><td>17.44</td><td>5315</td><td>1</td><td>63.5</td><td>130</td></tr>
+          <tr><td>88</td><td>Pullman, WA</td><td>44.41</td><td>5.57</td><td>11.83</td><td>4.62</td><td>19.88</td><td>6865</td><td>1</td><td>68.5</td><td>230</td></tr>
+          <tr><td>89</td><td>Inglewood, CA</td><td>44.28</td><td>4.83</td><td>11.83</td><td>4.62</td><td>78.45</td><td>13638</td><td>2</td><td>31.49</td><td>2020</td></tr>
+          <tr><td>90</td><td>Fort Collins, CO</td><td>44.09</td><td>4.87</td><td>10.45</td><td>4.62</td><td>22.84</td><td>4659</td><td>1</td><td>63.3</td><td>200</td></tr>
+          <tr><td>91</td><td>Tucson, AZ</td><td>43.98</td><td>4.37</td><td>11.83</td><td>4.62</td><td>17.44</td><td>4930</td><td>1</td><td>58.0</td><td>210</td></tr>
+          <tr><td>92</td><td>Syracuse, NY</td><td>43.97</td><td>4.18</td><td>16.32</td><td>4.38</td><td>52.28</td><td>4154</td><td>1</td><td>63.9</td><td>250</td></tr>
+          <tr><td>93</td><td>Bloomington, IN</td><td>43.58</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>10964</td><td>1</td><td>57.8</td><td>190</td></tr>
+          <tr><td>94</td><td>Santa Clara, CA</td><td>43.45</td><td>4.83</td><td>11.83</td><td>4.62</td><td>61.06</td><td>7784</td><td>1</td><td>51.77</td><td>1570</td></tr>
+          <tr><td>95</td><td>Annapolis, MD</td><td>43.42</td><td>5.51</td><td>16.67</td><td>4.36</td><td>26.76</td><td>3864</td><td>1</td><td>64.3</td><td>150</td></tr>
+          <tr><td>96</td><td>Troy, AL</td><td>43.37</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>11080</td><td>1</td><td>47.6</td><td>140</td></tr>
+          <tr><td>97</td><td>Durham, NC</td><td>43.36</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>3400</td><td>1</td><td>52.7</td><td>110</td></tr>
+          <tr><td>98</td><td>Dallas, TX</td><td>43.32</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>3107</td><td>1</td><td>54.9</td><td>160</td></tr>
+          <tr><td>99</td><td>Fresno, CA</td><td>43.25</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>3954</td><td>1</td><td>65.9</td><td>180</td></tr>
+          <tr><td>100</td><td>El Paso, TX</td><td>43.15</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5000</td><td>1</td><td>52.6</td><td>120</td></tr>
+          <tr><td>101</td><td>San Marcos, TX</td><td>43.08</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>3226</td><td>1</td><td>54.8</td><td>120</td></tr>
+          <tr><td>102</td><td>Monroe, LA</td><td>43.03</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>7891</td><td>1</td><td>43.8</td><td>80</td></tr>
+          <tr><td>103</td><td>College Park, MD</td><td>42.86</td><td>5.51</td><td>16.67</td><td>4.36</td><td>26.76</td><td>5248</td><td>1</td><td>59.5</td><td>220</td></tr>
+          <tr><td>104</td><td>Mount Pleasant, MI</td><td>42.84</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>7318</td><td>1</td><td>59.4</td><td>140</td></tr>
+          <tr><td>105</td><td>Memphis, TN</td><td>42.74</td><td>6.01</td><td>14.27</td><td>4.36</td><td>22.72</td><td>4854</td><td>1</td><td>58.3</td><td>190</td></tr>
+          <tr><td>106</td><td>Berkeley, CA</td><td>42.71</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>5076</td><td>1</td><td>61.9</td><td>230</td></tr>
+          <tr><td>107</td><td>Huntsville, TX</td><td>42.66</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5091</td><td>1</td><td>51.8</td><td>80</td></tr>
+          <tr><td>108</td><td>Denton, TX</td><td>42.62</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>3420</td><td>1</td><td>53.4</td><td>110</td></tr>
+          <tr><td>109</td><td>Mobile, AL</td><td>42.31</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>7271</td><td>1</td><td>50.7</td><td>90</td></tr>
+          <tr><td>110</td><td>Boca Raton, FL</td><td>42.17</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>8571</td><td>1</td><td>55.6</td><td>90</td></tr>
+          <tr><td>111</td><td>Birmingham, AL</td><td>42.11</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>4573</td><td>1</td><td>53.6</td><td>100</td></tr>
+          <tr><td>112</td><td>San Diego, CA</td><td>42.02</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>3398</td><td>1</td><td>63.7</td><td>150</td></tr>
+          <tr><td>113</td><td>Norfolk, VA</td><td>42.0</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>2130</td><td>1</td><td>49.4</td><td>110</td></tr>
+          <tr><td>114</td><td>Chicago, IL</td><td>41.97</td><td>4.11</td><td>8.23</td><td>4.75</td><td>34.75</td><td>5971</td><td>1</td><td>36.32</td><td>1420</td></tr>
+          <tr><td>115</td><td>Glendale, AZ</td><td>41.64</td><td>4.37</td><td>11.83</td><td>4.62</td><td>19.9</td><td>7205</td><td>1</td><td>40.0</td><td>710</td></tr>
+          <tr><td>116</td><td>Kalamazoo, MI</td><td>41.37</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>4132</td><td>1</td><td>59.7</td><td>130</td></tr>
+          <tr><td>117</td><td>Stanford, CA</td><td>41.1</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>5730</td><td>1</td><td>58.6</td><td>110</td></tr>
+          <tr><td>118</td><td>Kennesaw, GA</td><td>41.05</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>1159</td><td>1</td><td>50.6</td><td>80</td></tr>
+          <tr><td>119</td><td>Chestnut Hill, MA</td><td>40.82</td><td>4.91</td><td>16.46</td><td>4.38</td><td>43.52</td><td>5057</td><td>1</td><td>58.3</td><td>160</td></tr>
+          <tr><td>120</td><td>Mansfield, CT</td><td>40.8</td><td>4.44</td><td>18.12</td><td>4.38</td><td>17.44</td><td>4318</td><td>1</td><td>47.9</td><td>60</td></tr>
+          <tr><td>121</td><td>Champaign, IL</td><td>40.77</td><td>4.11</td><td>8.23</td><td>4.75</td><td>44.92</td><td>5890</td><td>1</td><td>60.1</td><td>220</td></tr>
+          <tr><td>122</td><td>Las Vegas, NV</td><td>40.59</td><td>5.66</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6311</td><td>1</td><td>60.8</td><td>80</td></tr>
+          <tr><td>123</td><td>Newark, DE</td><td>40.54</td><td>5.13</td><td>17.32</td><td>4.36</td><td>17.44</td><td>2102</td><td>1</td><td>52.8</td><td>100</td></tr>
+          <tr><td>124</td><td>Jacksonville, FL</td><td>40.06</td><td>4.65</td><td>21.68</td><td>4.36</td><td>30.84</td><td>6584</td><td>1</td><td>51.03</td><td>350</td></tr>
+          <tr><td>125</td><td>Murfreesboro, TN</td><td>39.64</td><td>6.01</td><td>14.27</td><td>4.36</td><td>22.72</td><td>3103</td><td>1</td><td>52.9</td><td>130</td></tr>
+          <tr><td>126</td><td>Albuquerque, NM</td><td>39.59</td><td>4.76</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6807</td><td>1</td><td>48.5</td><td>100</td></tr>
+          <tr><td>127</td><td>Piscataway, NJ</td><td>39.38</td><td>5.21</td><td>17.31</td><td>4.38</td><td>23.28</td><td>5961</td><td>1</td><td>46.7</td><td>230</td></tr>
+          <tr><td>128</td><td>Las Cruces, NM</td><td>39.34</td><td>4.76</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6011</td><td>1</td><td>48.5</td><td>120</td></tr>
+          <tr><td>129</td><td>DeKalb, IL</td><td>39.2</td><td>4.11</td><td>8.23</td><td>4.75</td><td>44.92</td><td>5877</td><td>1</td><td>56.9</td><td>150</td></tr>
+          <tr><td>130</td><td>Athens, OH</td><td>39.07</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>5625</td><td>1</td><td>61.7</td><td>140</td></tr>
+          <tr><td>131</td><td>Ypsilanti, MI</td><td>38.64</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>2976</td><td>1</td><td>54.2</td><td>90</td></tr>
+          <tr><td>132</td><td>Buffalo, NY</td><td>38.41</td><td>4.18</td><td>16.32</td><td>4.38</td><td>52.28</td><td>7147</td><td>1</td><td>47.2</td><td>70</td></tr>
+          <tr><td>133</td><td>Foxborough, MA</td><td>38.17</td><td>4.91</td><td>16.46</td><td>4.38</td><td>35.66</td><td>7344</td><td>1</td><td>33.85</td><td>700</td></tr>
+          <tr><td>134</td><td>Bowling Green, OH</td><td>38.13</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>6994</td><td>1</td><td>57.5</td><td>120</td></tr>
+          <tr><td>135</td><td>Muncie, IN</td><td>37.95</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>2557</td><td>1</td><td>54.8</td><td>100</td></tr>
+          <tr><td>136</td><td>Oxford, OH</td><td>37.85</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>6268</td><td>1</td><td>57.7</td><td>120</td></tr>
+          <tr><td>137</td><td>Reno, NV</td><td>37.7</td><td>5.66</td><td>11.83</td><td>4.62</td><td>17.44</td><td>2621</td><td>1</td><td>56.4</td><td>140</td></tr>
+          <tr><td>138</td><td>Landover, MD</td><td>37.62</td><td>5.51</td><td>11.83</td><td>4.36</td><td>60.96</td><td>6214</td><td>1</td><td>42.0</td><td>620</td></tr>
+          <tr><td>139</td><td>Springfield, MO</td><td>37.55</td><td>4.63</td><td>9.36</td><td>4.75</td><td>17.44</td><td>1699</td><td>1</td><td>53.1</td><td>100</td></tr>
+          <tr><td>140</td><td>Toledo, OH</td><td>37.2</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>2528</td><td>1</td><td>60.2</td><td>160</td></tr>
+          <tr><td>141</td><td>San Jose, CA</td><td>36.97</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>1767</td><td>1</td><td>52.9</td><td>70</td></tr>
+          <tr><td>142</td><td>Laramie, WY</td><td>36.8</td><td>7.2</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6211</td><td>1</td><td>62.5</td><td>180</td></tr>
+          <tr><td>143</td><td>Evanston, IL</td><td>36.51</td><td>4.11</td><td>8.23</td><td>4.75</td><td>44.92</td><td>1366</td><td>1</td><td>55.7</td><td>130</td></tr>
+          <tr><td>144</td><td>Honolulu, HI</td><td>36.41</td><td>6.04</td><td>11.83</td><td>4.62</td><td>18.24</td><td>1475</td><td>1</td><td>59.1</td><td>90</td></tr>
+          <tr><td>145</td><td>Paradise, NV</td><td>36.19</td><td>5.66</td><td>11.83</td><td>4.62</td><td>35.9</td><td>6311</td><td>1</td><td>47.59</td><td>570</td></tr>
+          <tr><td>146</td><td>Detroit, MI</td><td>36.17</td><td>4.33</td><td>10.47</td><td>4.75</td><td>24.88</td><td>6311</td><td>1</td><td>23.33</td><td>1300</td></tr>
+          <tr><td>147</td><td>Amherst, MA</td><td>35.33</td><td>4.91</td><td>16.46</td><td>4.38</td><td>43.52</td><td>3542</td><td>1</td><td>46.1</td><td>80</td></tr>
+          <tr><td>148</td><td>Miami Gardens, FL</td><td>35.28</td><td>4.65</td><td>21.68</td><td>4.36</td><td>30.64</td><td>7360</td><td>1</td><td>32.22</td><td>560</td></tr>
+          <tr><td>149</td><td>Miami, FL</td><td>35.06</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>1942</td><td>1</td><td>44.8</td><td>60</td></tr>
+          <tr><td>150</td><td>Cleveland, OH</td><td>33.14</td><td>5.13</td><td>12.24</td><td>4.75</td><td>35.17</td><td>6547</td><td>1</td><td>36.37</td><td>960</td></tr>
+          <tr><td>151</td><td>Kent, OH</td><td>32.64</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>2877</td><td>1</td><td>48.3</td><td>70</td></tr>
+          <tr><td>152</td><td>Akron, OH</td><td>31.85</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>5455</td><td>1</td><td>42.7</td><td>60</td></tr>
+          <tr class="dw-empty" style="display:none;"><td colspan="11">No matches found.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Optional footer brand name (left) -->
+  <div class="dw-footer" role="contentinfo">
+    <a class="dw-brand-left" href="#" aria-label="Brand name"></a>
+    <span></span>
+  </div>
+
+  <script>
+  (function(){
+    if(!window.DWTableInit){
+      window.DWTableInit = function init(root){
+        if(!root || root.dataset.dwInit==='1') return;
+        root.dataset.dwInit='1';
+
+        const table = root.querySelector('table.dw-table');
+        const tb = table ? table.tBodies[0] : null;
+        const scroller = root.querySelector('.dw-scroll');
+// Disable horizontal scrolling if the table has 4 or fewer columns
+if (table.tHead && table.tHead.rows[0].cells.length <= 4) {
+  scroller.classList.add('no-scroll');
+}
+        const controls = root.querySelector('.dw-controls');
+        if(!table || !tb || !scroller || !controls) return;
+
+        const field = controls.querySelector('.dw-field');
+        const searchInput = controls.querySelector('.dw-input');
+        const clearBtn = controls.querySelector('.dw-clear');
+        const statusEl = controls.querySelector('.dw-counter'); // hidden
+        const sizeSel = controls.querySelector('#dw-size');
+        const prevBtn = controls.querySelector('[data-page="prev"]');
+        const nextBtn = controls.querySelector('[data-page="next"]');
+        const emptyRow = tb.querySelector('.dw-empty');
+
+        /* record original order for "unsort" */
+        Array.from(tb.rows).forEach((r,i)=>{ if(!r.classList.contains('dw-empty')) r.dataset.idx=i; });
+
+        let pageSize = parseInt(sizeSel.value,10) || 10;  // 0 = All
+        let page = 1;
+        let filter = '';
+
+        /* header shadow while scrolled */
+        const onScrollShadow = ()=> scroller.classList.toggle('scrolled', scroller.scrollTop > 0);
+        scroller.addEventListener('scroll', onScrollShadow); onScrollShadow();
+
+        /* tri-state sorting */
+        const heads = Array.from(table.tHead.rows[0].cells);
+        heads.forEach((th,i)=>{
+          th.classList.add('sortable'); th.setAttribute('aria-sort','none'); th.dataset.sort='none'; th.tabIndex=0;
+          const type = th.dataset.type || 'text';
+          const go = ()=> sortBy(i,type,th);
+          th.addEventListener('click',go);
+          th.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+        });
+
+        function textOf(tr,i){ return (tr.children[i].innerText||'').trim(); }
+        function clearSortedClasses(){
+          heads.forEach(h=>h.classList.remove('is-sorted'));
+          Array.from(tb.rows).forEach(r=>Array.from(r.cells).forEach(c=>c.classList.remove('is-sorted')));
+        }
+        function markSortedColumn(colIdx){
+          heads[colIdx]?.classList.add('is-sorted');
+          Array.from(tb.rows).forEach(r=>{ const c=r.cells[colIdx]; if(c) c.classList.add('is-sorted'); });
+        }
+
+        function sortBy(colIdx, type, th){
+          const rows = Array.from(tb.rows).filter(r=>!r.classList.contains('dw-empty'));
+          const current = th.dataset.sort || 'none';
+          const next = current==='none' ? 'asc' : current==='asc' ? 'desc' : 'none';
+
+          heads.forEach(h=>{ h.dataset.sort='none'; h.setAttribute('aria-sort','none'); h.classList.remove('is-sorted'); });
+
+          if(next === 'none'){
+            rows.sort((a,b)=>(+a.dataset.idx)-(+b.dataset.idx));
+            rows.forEach(r=>tb.insertBefore(r, emptyRow));
+            clearSortedClasses();
+            renderPage();
+            return;
+          }
+
+          th.dataset.sort = next;
+          th.setAttribute('aria-sort', next==='asc'?'ascending':'descending');
+
+          const mul = next==='asc'?1:-1;
+          rows.sort((a,b)=>{
+            let v1=textOf(a,colIdx), v2=textOf(b,colIdx);
+            if((type||'text')==='num'){
+              v1=parseFloat(v1.replace(/[^0-9.\-]/g,'')); if(isNaN(v1)) v1=-Infinity;
+              v2=parseFloat(v2.replace(/[^0-9.\-]/g,'')); if(isNaN(v2)) v2=-Infinity;
+            }else{ v1=(v1+'').toLowerCase(); v2=(v2+'').toLowerCase(); }
+            if(v1>v2) return 1*mul; if(v1<v2) return -1*mul; return 0;
+          });
+          rows.forEach(r=>tb.insertBefore(r, emptyRow));
+          clearSortedClasses(); markSortedColumn(colIdx);
+          renderPage();
+        }
+
+        /* zebra */
+        function applyZebra(shown){
+          Array.from(tb.rows).forEach(r=>r.classList.remove('dw-zebra'));
+          shown.forEach((r,idx)=>{ if(idx % 2 === 0) r.classList.add('dw-zebra'); });
+        }
+
+        function matchesFilter(tr){ return !tr.classList.contains('dw-empty') && tr.innerText.toLowerCase().includes(filter); }
+
+        function renderPage(){
+          const ordered = Array.from(tb.rows).filter(r=>!r.classList.contains('dw-empty'));
+          const visible = ordered.filter(matchesFilter);
+          const total = visible.length;
+
+          ordered.forEach(r=>r.style.display='none');
+          let shown = [];
+
+          if(total===0){
+            if(emptyRow){ emptyRow.style.display='table-row'; emptyRow.firstElementChild.colSpan = heads.length; }
+            if(statusEl) statusEl.textContent = "";
+            prevBtn.disabled = nextBtn.disabled = true;
+          }else{
+            if(emptyRow) emptyRow.style.display='none';
+            if(pageSize===0){
+              shown = visible;
+              if(statusEl) statusEl.textContent = "";
+              prevBtn.disabled = nextBtn.disabled = true;
+            }else{
+              const pages = Math.max(1, Math.ceil(total / pageSize));
+              page = Math.min(Math.max(1, page), pages);
+              const start = (page-1)*pageSize, end = start + pageSize;
+              shown = visible.slice(start,end);
+              if(statusEl) statusEl.textContent = "";
+              prevBtn.disabled = page<=1; nextBtn.disabled = page>=pages;
+            }
+          }
+
+          shown.forEach(r=>r.style.display='table-row');
+          applyZebra(shown);
+        }
+
+        /* search + clear */
+        const syncClearBtn = ()=> field.classList.toggle('has-value', !!searchInput.value);
+        let t=null;
+        searchInput.addEventListener('input', e=>{
+          syncClearBtn();
+          clearTimeout(t);
+          t=setTimeout(()=>{ filter=(e.target.value||'').toLowerCase().trim(); page=1; renderPage(); },120);
+        });
+        clearBtn.addEventListener('click', ()=>{ searchInput.value=''; syncClearBtn(); filter=''; page=1; renderPage(); searchInput.focus(); });
+        syncClearBtn();
+
+        /* page size + nav */
+        sizeSel.addEventListener('change', e=>{ pageSize = parseInt(e.target.value,10) || 0; page=1; renderPage(); });
+        prevBtn.addEventListener('click', ()=>{ page--; renderPage(); });
+        nextBtn.addEventListener('click', ()=>{ page++; renderPage(); });
+
+        /* ---------- Config ---------- */
+        const LOGO_URL   = "https://i.postimg.cc/kGVJyXc1/VI-logo-final.png"; // CSB logo (mask)
+        const BRAND_NAME = "";
+        const BRAND_HREF = "";
+
+        // Top logo (not clickable) - set mask CSS var & show wrapper
+        const topWrap = root.querySelector('.dw-top-brand');
+        const topLogo = root.querySelector('.dw-top-logo');
+        if (LOGO_URL){
+          topLogo.style.setProperty('--logo-url', `url("${LOGO_URL}")`);
+          topWrap.style.display = "flex";
+        }
+        // Footer brand name (optional)
+        const footer = root.querySelector('.dw-footer');
+        const brandLeft = root.querySelector('.dw-brand-left');
+        if (BRAND_NAME){
+          brandLeft.textContent = BRAND_NAME;
+          if (BRAND_HREF) brandLeft.href = BRAND_HREF;
+          brandLeft.style.display = "inline-block";
+        } else {
+          footer.style.display = "none";
+        }
+        /* -------------------------------- */
+        renderPage();
+      };
+      document.querySelectorAll('[data-dw="table"]').forEach(root=>window.DWTableInit(root));
+    }
+    window.DWTableInit(document.getElementById('dw-lottery-3'));
+  })();
+  </script>
+</div>
+</section>
