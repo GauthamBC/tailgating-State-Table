@@ -1,0 +1,598 @@
+<section id="tailgating-CFBteams">
+<!-- Datawrapper-style table (black header + gold stripes) -->
+<div id="dw-lottery-5" data-dw="table"
+     style="--logo-h:34px;
+            --stripe:#F2C23A;              /* gold zebra */
+            --hover:#F7DB7A;               /* gold hover */
+            --header-bg:#000000;           /* black header */
+            --header-fg:#ffffff;
+            --scroll-track:#f7f8fb; 
+            --scroll-thumb:#000000; 
+            --scroll-thumb-hover:#333333;
+            --gutter: clamp(8px, 4vw, 14px);
+            --gutter-left: var(--gutter);
+            --gutter-right: var(--gutter); 
+            --edge-pad: 14px;
+            --table-max-h: 500px;
+            --vbar-w: 6px; --vbar-w-hover: 8px;">
+  <style>
+  /* ===== Datawrapper-style table (black + gold theme) ===== */
+  #dw-lottery-5{
+    /* Brand palette (gold + black) */
+    --brand-50:#FFF7DC; 
+    --brand-100:#FFE8AA;
+    --brand-500:#F2C23A; 
+    --brand-600:#D9A72A; 
+    --brand-700:#B9851A; 
+    --brand-900:#111111;
+
+    --bg:#ffffff; --text:#1f2937;
+    box-sizing:border-box; overflow-x:hidden; display:block; max-width:100%;
+    padding-left:var(--gutter-left,var(--gutter));
+    padding-right:var(--gutter-right,var(--gutter));
+  }
+
+  /* Controls layout */
+  #dw-lottery-5 .dw-controls{
+    display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
+    gap:12px; margin:2px 0 10px 0;
+  }
+  #dw-lottery-5 .left{display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-start}
+  #dw-lottery-5 .center{justify-self:center; display:flex; align-items:center}
+  #dw-lottery-5 .right{display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+
+  #dw-lottery-5 .dw-field{position:relative}
+  #dw-lottery-5 .dw-input,#dw-lottery-5 .dw-select,#dw-lottery-5 .dw-btn{
+    font:14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; border-radius:10px; padding:8px 10px; transition:.15s ease;
+  }
+  #dw-lottery-5 .dw-input,#dw-lottery-5 .dw-select{
+    background:#fff;
+    border:1px solid var(--brand-900);         /* black border */
+    color:var(--text); box-shadow:inset 0 1px 2px rgba(16,24,40,.04);
+  }
+  #dw-lottery-5 .dw-input{width:min(320px,100%); padding-right:36px}
+  #dw-lottery-5 .dw-input::placeholder{color:#9AA4B2}
+  #dw-lottery-5 .dw-input:focus,#dw-lottery-5 .dw-select:focus{
+    outline:none; border-color:var(--brand-900);
+    box-shadow:0 0 0 3px color-mix(in oklab,var(--brand-900) 25%,transparent); background:#fff;
+  }
+  #dw-lottery-5 .dw-select{
+    appearance:none; padding-right:34px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23111111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:right 10px center; background-size:14px;
+  }
+  #dw-lottery-5 .dw-btn{background:var(--brand-900); color:#fff; border:1px solid var(--brand-900); padding-inline:12px; cursor:pointer}
+  #dw-lottery-5 .dw-btn:hover{background:#222; border-color:#222} 
+  #dw-lottery-5 .dw-btn:active{transform:translateY(1px)}
+  #dw-lottery-5 .dw-btn[disabled]{background:#fafafa; border-color:#d1d5db; color:#6b7280; opacity:1; cursor:not-allowed; transform:none}
+  #dw-lottery-5 .dw-status{font:12px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:#6b7280}
+  #dw-lottery-5 .dw-counter{display:none !important;}
+
+  /* Clear button */
+  #dw-lottery-5 .dw-clear{
+    position:absolute; right:10px; top:50%; translate:0 -50%; width:22px; height:22px; border-radius:9999px; border:0;
+    background:transparent; color:var(--brand-900); cursor:pointer; display:none; align-items:center; justify-content:center;
+  }
+  #dw-lottery-5 .dw-field.has-value .dw-clear{display:flex}
+  #dw-lottery-5 .dw-clear:hover{background:var(--brand-50)}
+
+  /* ===== Top-center logo (kept; fills with header colour if you want) ===== */
+  #dw-lottery-5 .dw-top-brand{display:none; align-items:center}
+  #dw-lottery-5 .dw-top-logo{
+    display:block;
+    width:200px; height:24px;
+    background:var(--header-bg);               /* set to black to match header */
+    -webkit-mask: var(--logo-url) no-repeat center / contain;
+            mask: var(--logo-url) no-repeat center / contain;
+  }
+
+  /* Card & table */
+ /* Card & table */
+#dw-lottery-5 .dw-card {
+  background: var(--bg);
+  border: 0;
+  box-shadow: none;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+
+/* Default scroll for wide tables */
+#dw-lottery-5 .dw-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Disable horizontal scroll if 4 or fewer columns */
+#dw-lottery-5 .dw-scroll.no-scroll {
+  overflow-x: hidden !important;
+}
+#dw-lottery-5 table.dw-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  background: transparent;
+
+  /* ✅ Allow natural column sizing + horizontal scroll */
+  min-width: 1200px;
+  table-layout: auto;
+}
+
+
+  /* Header */
+  #dw-lottery-5 thead th{
+    background:var(--header-bg); color:var(--header-fg,#fff); font-weight:700; text-align:center;
+    padding:12px 14px; white-space:nowrap; vertical-align:middle; border:0;
+    transition:background-color .15s, color .15s, box-shadow .15s, transform .05s;
+  }
+  #dw-lottery-5 thead th.sortable{cursor:pointer; user-select:none}
+  #dw-lottery-5 thead th.sortable::after{content:"↕"; font-size:12px; opacity:.75; margin-left:8px; color:var(--header-fg,#fff)}
+  #dw-lottery-5 thead th.sortable[data-sort="asc"]::after{content:"▲"}
+  #dw-lottery-5 thead th.sortable[data-sort="desc"]::after{content:"▼"}
+  #dw-lottery-5 thead th.sortable:hover,#dw-lottery-5 thead th.sortable:focus-visible{background:#222; color:#fff; box-shadow:inset 0 -3px 0 var(--brand-500)}
+  #dw-lottery-5 .dw-scroll.scrolled thead th{box-shadow:0 6px 10px -6px rgba(0,0,0,.25)}
+  #dw-lottery-5 .dw-scroll.scrolled thead th.sortable:hover,#dw-lottery-5 .dw-scroll.scrolled thead th.sortable:focus-visible{box-shadow:inset 0 -3px 0 var(--brand-500),0 6px 10px -6px rgba(0,0,0,.25)}
+  #dw-lottery-5 thead th.is-sorted{background:#1a1a1a; color:#fff; box-shadow:inset 0 -3px 0 var(--brand-500)}
+
+/* Allow text wrapping only for the State column, keep headers tidy */
+#dw-lottery-5 thead th,
+#dw-lottery-5 tbody td {
+  padding: 12px 10px;
+  overflow: hidden;
+}
+
+/* Keep headers on one line */
+#dw-lottery-5 thead th {
+  white-space: nowrap;
+}
+
+/* ✅ Only wrap multi-word states over 2–3 lines */
+#dw-lottery-5 tbody td:nth-child(2) {
+  white-space: normal;          
+  word-break: keep-all;         
+  overflow-wrap: break-word;
+  min-width: 100px;
+  max-width: 220px;            
+  line-height: 1.3;
+}
+
+/* Prevent Chrome re-paint duplication bug */
+#dw-lottery-5 tbody td {
+  background-clip: padding-box;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+  /* Body */
+  #dw-lottery-5 tbody td{ text-align:center; vertical-align:middle; background:transparent!important; border:0; transition:background-color .12s }
+  #dw-lottery-5 thead th:last-child,#dw-lottery-5 tbody td:last-child{padding-right:14px}
+  #dw-lottery-5 tbody tr:nth-child(odd){background:var(--stripe,#F2C23A)}  /* gold stripes */
+  #dw-lottery-5 tbody tr:hover{background:var(--hover,#F7DB7A); box-shadow:inset 3px 0 0 var(--brand-900)}
+  #dw-lottery-5 thead th{position:sticky; top:var(--sticky-top,0); z-index:5}
+
+  /* Scrollbar + height */
+  #dw-lottery-5 .dw-scroll{max-height:var(--table-max-h,360px); overflow-y:auto; -ms-overflow-style:auto; scrollbar-width:thin; scrollbar-color:var(--scroll-thumb) transparent}
+  #dw-lottery-5 .dw-scroll::-webkit-scrollbar:horizontal{height:0; display:none}
+  #dw-lottery-5 .dw-scroll::-webkit-scrollbar:vertical{width:var(--vbar-w)}
+  #dw-lottery-5 .dw-scroll:hover::-webkit-scrollbar:vertical{width:var(--vbar-w-hover)}
+  #dw-lottery-5 .dw-scroll::-webkit-scrollbar-thumb{background:var(--scroll-thumb); border-radius:9999px; border:2px solid transparent; background-clip:content-box}
+
+  /* Dynamic zebra */
+  #dw-lottery-5 tbody tr{background:transparent!important}
+  #dw-lottery-5 tbody tr.dw-zebra{background:var(--stripe,#F2C23A)!important}
+  #dw-lottery-5 tbody td.is-sorted{background:var(--hover,#F7DB7A)!important; font-weight:600}
+
+  /* Empty-state row */
+  #dw-lottery-5 tr.dw-empty td{text-align:center; color:#6b7280; font-style:italic; padding:18px 14px; background:linear-gradient(0deg,#fff,var(--brand-50))}
+
+  /* Footer (brand name left; optional) */
+  #dw-lottery-5 .dw-footer{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    padding:10px 0; margin-top:10px; color:#6b7280;
+    font:12px/1.25 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    box-shadow:0 -1px 0 0 color-mix(in oklab,var(--brand-900) 35%, transparent);
+  }
+  #dw-lottery-5 .dw-brand-left{
+    display:none; color:inherit; text-decoration:none; font-weight:600;
+    border-bottom:1px dashed transparent; transition:color .15s, border-color .15s;
+  }
+  #dw-lottery-5 .dw-brand-left:is(:hover,:focus-visible){color:var(--brand-700); border-color:var(--brand-700); outline:none}
+
+  /* === Mobile one-line controls (keep logo visible) === */
+  @media (max-width: 600px){
+    #dw-lottery-5 .dw-controls{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto auto;
+      align-items:center; column-gap:8px; row-gap:0; margin:6px 0 8px;
+    }
+    #dw-lottery-5 .left, #dw-lottery-5 .center, #dw-lottery-5 .right{min-width:0;}
+    #dw-lottery-5 .dw-field{width:100%; max-width:46vw;}
+    #dw-lottery-5 .dw-input{width:100%; padding:6px 24px 6px 10px; height:34px; font-size:13px;}
+    #dw-lottery-5 .dw-clear{width:20px; height:20px;}
+    #dw-lottery-5 thead th{ font-size:13px; line-height:1.2; } /* tighter header on small screens */
+    #dw-lottery-5 .dw-top-logo{height:22px; width:120px;}
+    #dw-lottery-5 .right{justify-content:flex-end; gap:6px;}
+    #dw-lottery-5 .right .dw-status{display:none;}
+    #dw-lottery-5 .dw-select{min-width:68px; height:32px; padding:6px 22px 6px 8px; font-size:13px;}
+    #dw-lottery-5 .dw-btn{width:32px; height:32px; padding:0; border-radius:12px; display:inline-flex; align-items:center; justify-content:center;}
+  }
+  </style>
+
+  <!-- Controls -->
+  <div class="dw-controls">
+    <div class="left">
+      <div class="dw-field">
+        <input type="search" class="dw-input" placeholder="Search table…" aria-label="Search table">
+        <button type="button" class="dw-clear" aria-label="Clear search">×</button>
+      </div>
+      <span class="dw-status dw-counter" aria-live="polite"></span>
+    </div>
+
+    <!-- Center: NOT clickable logo -->
+    <div class="center">
+      <div class="dw-top-brand" aria-label="Brand">
+        <div class="dw-top-logo" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="right">
+      <label class="dw-status" for="dw-size" style="margin-right:4px;">Rows/page</label>
+      <select id="dw-size" class="dw-select">
+        <option value="10" selected>10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="0">All</option>
+      </select>
+      <button class="dw-btn" data-page="prev" aria-label="Previous page">‹</button>
+      <button class="dw-btn" data-page="next" aria-label="Next page">›</button>
+    </div>
+  </div>
+
+<div class="dw-card">
+    <div class="dw-scroll">
+      <table class="dw-table">
+        <thead>
+          <tr>
+            <th scope="col" data-type="num">Rank</th>
+            <th scope="col" data-type="text">Team</th>
+            <th scope="col" data-type="text">Stadium</th>
+            <th scope="col" data-type="num">Tailgating Score (/100)</th>
+            <th scope="col" data-type="num">Beer ($ per 6-pack)</th>
+            <th scope="col" data-type="num">BBQ Fuel Cost ($/bag)</th>
+            <th scope="col" data-type="num">Meat Price ($/lb)</th>
+            <th scope="col" data-type="num">Game-Day Parking ($)</th>
+            <th scope="col" data-type="num">Stadium Parking Spaces (Est.)</th>
+            <th scope="col" data-type="num">Positive Fan Sentiment (%)</th>
+            <th scope="col" data-type="num">Fan Interest (Searches/Month)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Clemson Tigers</td><td>Memorial Stadium</td><td>87.5</td><td>4.13</td><td>11.83</td><td>4.36</td><td>17.44</td><td>16979</td><td>74.8</td><td>500</td></tr>
+          <tr><td>2</td><td>Texas A&M Aggies</td><td>Kyle Field</td><td>83.96</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>21403</td><td>70.3</td><td>520</td></tr>
+          <tr><td>3</td><td>Alabama Crimson Tide</td><td>Bryant–Denny Stadium</td><td>83.72</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>20849</td><td>72.4</td><td>520</td></tr>
+          <tr><td>4</td><td>Penn State Nittany Lions</td><td>Beaver Stadium</td><td>83.36</td><td>5.8</td><td>13.67</td><td>4.38</td><td>26.08</td><td>22202</td><td>75.0</td><td>510</td></tr>
+          <tr><td>5</td><td>Ole Miss Rebels</td><td>Vaught–Hemingway Stadium</td><td>82.83</td><td>5.07</td><td>14.29</td><td>4.36</td><td>17.44</td><td>13341</td><td>77.6</td><td>550</td></tr>
+          <tr><td>6</td><td>Georgia Bulldogs</td><td>Sanford Stadium</td><td>82.3</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>19382</td><td>73.1</td><td>470</td></tr>
+          <tr><td>7</td><td>LSU Tigers</td><td>Tiger Stadium</td><td>80.51</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>9934</td><td>78.5</td><td>540</td></tr>
+          <tr><td>8</td><td>Auburn Tigers</td><td>Jordan–Hare Stadium</td><td>78.04</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>18342</td><td>70.0</td><td>470</td></tr>
+          <tr><td>9</td><td>Oklahoma Sooners</td><td>Gaylord Family – Oklahoma Memorial Stadium</td><td>75.69</td><td>4.74</td><td>10.86</td><td>4.36</td><td>17.44</td><td>9105</td><td>70.8</td><td>480</td></tr>
+          <tr><td>10</td><td>Texas Longhorns</td><td>Darrell K Royal–Texas Memorial Stadium</td><td>75.32</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>9720</td><td>73.3</td><td>540</td></tr>
+          <tr><td>11</td><td>Arkansas Razorbacks</td><td>Donald W. Reynolds Razorback Stadium</td><td>75.1</td><td>4.86</td><td>10.59</td><td>4.36</td><td>17.44</td><td>15878</td><td>64.9</td><td>390</td></tr>
+          <tr><td>12</td><td>Florida Gators</td><td>Ben Hill Griffin Stadium</td><td>72.93</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>18448</td><td>71.2</td><td>400</td></tr>
+          <tr><td>13</td><td>South Carolina Gamecocks</td><td>Williams–Brice Stadium</td><td>70.4</td><td>4.13</td><td>11.83</td><td>4.36</td><td>17.44</td><td>7530</td><td>69.4</td><td>370</td></tr>
+          <tr><td>14</td><td>Tennessee Volunteers</td><td>Neyland Stadium</td><td>70.34</td><td>6.01</td><td>14.27</td><td>4.36</td><td>22.72</td><td>9895</td><td>75.5</td><td>460</td></tr>
+          <tr><td>15</td><td>Oklahoma State Cowboys</td><td>Boone Pickens Stadium</td><td>70.06</td><td>4.74</td><td>10.86</td><td>4.36</td><td>17.44</td><td>10897</td><td>68.2</td><td>330</td></tr>
+          <tr><td>16</td><td>West Virginia Mountaineers</td><td>Mountaineer Field at Milan Puskar Stadium</td><td>69.94</td><td>4.87</td><td>11.83</td><td>4.36</td><td>17.44</td><td>12500</td><td>65.8</td><td>350</td></tr>
+          <tr><td>17</td><td>Michigan Wolverines</td><td>Michigan Stadium</td><td>68.94</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>10447</td><td>73.7</td><td>450</td></tr>
+          <tr><td>18</td><td>Mississippi State Bulldogs</td><td>Davis Wade Stadium</td><td>68.55</td><td>5.07</td><td>14.29</td><td>4.36</td><td>17.44</td><td>12565</td><td>66.7</td><td>360</td></tr>
+          <tr><td>19</td><td>Ohio State Buckeyes</td><td>Ohio Stadium</td><td>66.83</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>9979</td><td>72.5</td><td>520</td></tr>
+          <tr><td>20</td><td>Nebraska Cornhuskers</td><td>Memorial Stadium</td><td>66.47</td><td>4.99</td><td>7.75</td><td>4.75</td><td>17.44</td><td>8297</td><td>74.0</td><td>440</td></tr>
+          <tr><td>21</td><td>Virginia Tech Hokies</td><td>Lane Stadium</td><td>65.4</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>13673</td><td>62.0</td><td>310</td></tr>
+          <tr><td>22</td><td>Notre Dame Fighting Irish</td><td>Notre Dame Stadium</td><td>63.7</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>7536</td><td>72.0</td><td>430</td></tr>
+          <tr><td>23</td><td>Wisconsin Badgers</td><td>Camp Randall Stadium</td><td>63.41</td><td>4.91</td><td>8.7</td><td>4.75</td><td>17.44</td><td>7384</td><td>75.0</td><td>380</td></tr>
+          <tr><td>24</td><td>Florida State Seminoles</td><td>Doak Campbell Stadium</td><td>62.28</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>6532</td><td>71.0</td><td>420</td></tr>
+          <tr><td>25</td><td>Iowa Hawkeyes</td><td>Kinnick Stadium</td><td>62.07</td><td>4.64</td><td>7.15</td><td>4.75</td><td>17.44</td><td>7869</td><td>70.4</td><td>350</td></tr>
+          <tr><td>26</td><td>Texas Tech Red Raiders</td><td>Jones AT&T Stadium</td><td>61.12</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5847</td><td>68.5</td><td>340</td></tr>
+          <tr><td>27</td><td>Kansas State Wildcats</td><td>Bill Snyder Family Stadium</td><td>60.42</td><td>4.33</td><td>8.74</td><td>4.75</td><td>17.44</td><td>10417</td><td>68.9</td><td>270</td></tr>
+          <tr><td>28</td><td>ECU Pirates</td><td>Dowdy–Ficklen Stadium</td><td>59.1</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>14571</td><td>65.4</td><td>120</td></tr>
+          <tr><td>29</td><td>Iowa State Cyclones</td><td>Jack Trice Stadium</td><td>58.71</td><td>4.64</td><td>7.15</td><td>4.75</td><td>17.44</td><td>12812</td><td>63.7</td><td>240</td></tr>
+          <tr><td>30</td><td>Michigan State Spartans</td><td>Spartan Stadium</td><td>58.14</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>8508</td><td>65.4</td><td>340</td></tr>
+          <tr><td>31</td><td>NC State Wolfpack</td><td>Carter–Finley Stadium</td><td>57.62</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>5526</td><td>64.8</td><td>310</td></tr>
+          <tr><td>32</td><td>Missouri Tigers</td><td>Faurot Field at Memorial Stadium</td><td>57.58</td><td>4.63</td><td>9.36</td><td>4.75</td><td>17.44</td><td>12838</td><td>62.9</td><td>260</td></tr>
+          <tr><td>33</td><td>Kentucky Wildcats</td><td>Kroger Field</td><td>57.27</td><td>5.11</td><td>11.92</td><td>4.36</td><td>17.44</td><td>5952</td><td>64.2</td><td>230</td></tr>
+          <tr><td>34</td><td>App State Mountaineers</td><td>Kidd Brewer Stadium</td><td>55.89</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>6250</td><td>67.5</td><td>210</td></tr>
+          <tr><td>35</td><td>BYU Cougars</td><td>LaVell Edwards Stadium</td><td>55.45</td><td>4.93</td><td>10.74</td><td>4.62</td><td>17.44</td><td>7054</td><td>68.5</td><td>230</td></tr>
+          <tr><td>36</td><td>Georgia Southern Eagles</td><td>Allen E. Paulson Stadium</td><td>55.38</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>9091</td><td>66.3</td><td>130</td></tr>
+          <tr><td>37</td><td>Utah Utes</td><td>Rice–Eccles Stadium</td><td>55.29</td><td>4.93</td><td>10.74</td><td>4.62</td><td>17.44</td><td>4995</td><td>68.9</td><td>270</td></tr>
+          <tr><td>38</td><td>Louisville Cardinals</td><td>L&N Federal Credit Union Stadium</td><td>55.22</td><td>5.11</td><td>11.92</td><td>4.36</td><td>17.44</td><td>5903</td><td>61.3</td><td>220</td></tr>
+          <tr><td>39</td><td>Oregon Ducks</td><td>Autzen Stadium</td><td>55.08</td><td>5.63</td><td>11.83</td><td>4.62</td><td>17.04</td><td>5243</td><td>69.1</td><td>330</td></tr>
+          <tr><td>40</td><td>Baylor Bears</td><td>McLane Stadium</td><td>55.06</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5130</td><td>63.8</td><td>270</td></tr>
+          <tr><td>41</td><td>Arizona State Sun Devils</td><td>Mountain America Stadium</td><td>54.94</td><td>4.37</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6091</td><td>61.7</td><td>310</td></tr>
+          <tr><td>42</td><td>Coastal Carolina Chanticleers</td><td>Brooks Stadium</td><td>54.92</td><td>4.13</td><td>11.83</td><td>4.36</td><td>17.44</td><td>4375</td><td>63.9</td><td>130</td></tr>
+          <tr><td>43</td><td>Virginia Cavaliers</td><td>Scott Stadium</td><td>54.74</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>12812</td><td>54.2</td><td>170</td></tr>
+          <tr><td>44</td><td>Colorado Buffaloes</td><td>Folsom Field</td><td>54.67</td><td>4.87</td><td>10.45</td><td>4.62</td><td>22.84</td><td>5703</td><td>70.0</td><td>250</td></tr>
+          <tr><td>45</td><td>Purdue Boilermakers</td><td>Ross–Ade Stadium</td><td>54.66</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>12800</td><td>60.9</td><td>230</td></tr>
+          <tr><td>46</td><td>TCU Horned Frogs</td><td>Amon G. Carter Stadium</td><td>54.63</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>4563</td><td>66.1</td><td>240</td></tr>
+          <tr><td>47</td><td>UCF Knights</td><td>FBC Mortgage Stadium</td><td>54.55</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>4292</td><td>68.0</td><td>320</td></tr>
+          <tr><td>48</td><td>Army Black Knights</td><td>Michie Stadium</td><td>54.49</td><td>4.18</td><td>16.32</td><td>4.38</td><td>52.28</td><td>13818</td><td>69.2</td><td>160</td></tr>
+          <tr><td>49</td><td>Marshall Thundering Herd</td><td>Joan C. Edwards Stadium</td><td>54.4</td><td>4.87</td><td>11.83</td><td>4.36</td><td>17.44</td><td>6349</td><td>61.8</td><td>160</td></tr>
+          <tr><td>50</td><td>Air Force Falcons</td><td>Falcon Stadium</td><td>54.3</td><td>4.87</td><td>10.45</td><td>4.62</td><td>22.84</td><td>11269</td><td>67.6</td><td>140</td></tr>
+          <tr><td>51</td><td>Washington Huskies</td><td>Husky Stadium</td><td>54.23</td><td>5.57</td><td>11.83</td><td>4.62</td><td>19.88</td><td>6804</td><td>68.1</td><td>300</td></tr>
+          <tr><td>52</td><td>Oregon State Beavers</td><td>Reser Stadium</td><td>53.73</td><td>5.63</td><td>11.83</td><td>4.62</td><td>17.04</td><td>7406</td><td>67.2</td><td>270</td></tr>
+          <tr><td>53</td><td>North Carolina Tar Heels</td><td>Kenan Memorial Stadium</td><td>53.68</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>5739</td><td>63.0</td><td>230</td></tr>
+          <tr><td>54</td><td>Boise State Broncos</td><td>Albertsons Stadium</td><td>52.78</td><td>5.07</td><td>11.05</td><td>4.62</td><td>17.44</td><td>3533</td><td>69.5</td><td>250</td></tr>
+          <tr><td>55</td><td>James Madison Dukes</td><td>Bridgeforth Stadium</td><td>52.01</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>5183</td><td>60.2</td><td>200</td></tr>
+          <tr><td>56</td><td>Southern Miss Golden Eagles</td><td>M. M. Roberts Stadium</td><td>51.78</td><td>5.07</td><td>14.29</td><td>4.36</td><td>17.44</td><td>10286</td><td>57.4</td><td>120</td></tr>
+          <tr><td>57</td><td>Washington State Cougars</td><td>Gesa Field at Martin Stadium</td><td>51.77</td><td>5.57</td><td>11.83</td><td>4.62</td><td>19.88</td><td>6865</td><td>68.5</td><td>230</td></tr>
+          <tr><td>58</td><td>Western Kentucky Hilltoppers</td><td>Houchens Industries–L.T. Smith Stadium</td><td>51.24</td><td>5.11</td><td>11.92</td><td>4.36</td><td>17.44</td><td>4607</td><td>59.2</td><td>180</td></tr>
+          <tr><td>59</td><td>Kansas Jayhawks</td><td>David Booth Kansas Memorial Stadium</td><td>51.19</td><td>4.33</td><td>8.74</td><td>4.75</td><td>17.44</td><td>8651</td><td>62.4</td><td>170</td></tr>
+          <tr><td>60</td><td>Miami Hurricanes</td><td>Hard Rock Stadium</td><td>50.81</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>7360</td><td>61.0</td><td>250</td></tr>
+          <tr><td>61</td><td>Indiana Hoosiers</td><td>Memorial Stadium (Indiana)</td><td>49.61</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>10964</td><td>57.8</td><td>190</td></tr>
+          <tr><td>62</td><td>Louisiana Tech Bulldogs</td><td>Joe Aillet Stadium</td><td>49.36</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>5950</td><td>59.0</td><td>120</td></tr>
+          <tr><td>63</td><td>Minnesota Golden Gophers</td><td>Huntington Bank Stadium</td><td>49.31</td><td>4.85</td><td>8.7</td><td>4.75</td><td>17.44</td><td>4933</td><td>63.4</td><td>240</td></tr>
+          <tr><td>64</td><td>Louisiana Ragin' Cajuns</td><td>Cajun Field</td><td>49.05</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>2273</td><td>61.2</td><td>170</td></tr>
+          <tr><td>65</td><td>Wake Forest Demon Deacons</td><td>Truist Field</td><td>48.83</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>9000</td><td>56.5</td><td>120</td></tr>
+          <tr><td>66</td><td>Tulane Green Wave</td><td>Yulman Stadium</td><td>47.99</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>2913</td><td>56.8</td><td>190</td></tr>
+          <tr><td>67</td><td>Colorado State Rams</td><td>Canvas Stadium</td><td>47.97</td><td>4.87</td><td>10.45</td><td>4.62</td><td>22.84</td><td>4659</td><td>63.3</td><td>200</td></tr>
+          <tr><td>68</td><td>Arizona Wildcats</td><td>Arizona Stadium</td><td>47.84</td><td>4.37</td><td>11.83</td><td>4.62</td><td>17.44</td><td>4930</td><td>58.0</td><td>210</td></tr>
+          <tr><td>69</td><td>California Golden Bears</td><td>California Memorial Stadium</td><td>47.15</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>5076</td><td>61.9</td><td>230</td></tr>
+          <tr><td>70</td><td>Utah State Aggies</td><td>Maverik Stadium</td><td>47.08</td><td>4.93</td><td>10.74</td><td>4.62</td><td>17.44</td><td>5315</td><td>63.5</td><td>130</td></tr>
+          <tr><td>71</td><td>Arkansas State Red Wolves</td><td>Centennial Bank Stadium</td><td>47.06</td><td>4.86</td><td>10.59</td><td>4.36</td><td>17.44</td><td>6335</td><td>49.2</td><td>130</td></tr>
+          <tr><td>72</td><td>USC Trojans</td><td>Los Angeles Memorial Coliseum</td><td>46.78</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>7524</td><td>65.5</td><td>110</td></tr>
+          <tr><td>73</td><td>Liberty Flames</td><td>Williams Stadium</td><td>46.76</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>2841</td><td>61.8</td><td>100</td></tr>
+          <tr><td>74</td><td>Jacksonville State Gamecocks</td><td>Burgess–Snow Field at JSU Stadium</td><td>46.72</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>8182</td><td>57.2</td><td>100</td></tr>
+          <tr><td>75</td><td>UTSA Roadrunners</td><td>Alamodome</td><td>46.69</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>6214</td><td>56.1</td><td>140</td></tr>
+          <tr><td>76</td><td>Pittsburgh Panthers</td><td>Acrisure Stadium</td><td>46.52</td><td>5.8</td><td>13.67</td><td>4.38</td><td>26.08</td><td>6641</td><td>58.7</td><td>180</td></tr>
+          <tr><td>77</td><td>Maryland Terrapins</td><td>SECU Stadium</td><td>46.41</td><td>5.51</td><td>16.67</td><td>4.36</td><td>26.76</td><td>5248</td><td>59.5</td><td>220</td></tr>
+          <tr><td>78</td><td>Fresno State Bulldogs</td><td>Valley Children's Stadium</td><td>46.35</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>3954</td><td>65.9</td><td>180</td></tr>
+          <tr><td>79</td><td>Syracuse Orange</td><td>JMA Wireless Dome</td><td>45.87</td><td>4.18</td><td>16.32</td><td>4.38</td><td>52.28</td><td>4154</td><td>63.9</td><td>250</td></tr>
+          <tr><td>80</td><td>Central Michigan Chippewas</td><td>Kelly/Shorts Stadium</td><td>45.82</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>7318</td><td>59.4</td><td>140</td></tr>
+          <tr><td>81</td><td>Troy Trojans</td><td>Veterans Memorial Stadium</td><td>45.68</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>11080</td><td>47.6</td><td>140</td></tr>
+          <tr><td>82</td><td>Memphis Tigers</td><td>Simmons Bank Liberty Stadium</td><td>45.35</td><td>6.01</td><td>14.27</td><td>4.36</td><td>22.72</td><td>4854</td><td>58.3</td><td>190</td></tr>
+          <tr><td>83</td><td>UCLA Bruins</td><td>Rose Bowl</td><td>45.29</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>10193</td><td>59.0</td><td>100</td></tr>
+          <tr><td>84</td><td>Navy Midshipmen</td><td>Navy–Marine Corps Memorial Stadium</td><td>45.03</td><td>5.51</td><td>16.67</td><td>4.36</td><td>26.76</td><td>3864</td><td>64.3</td><td>150</td></tr>
+          <tr><td>85</td><td>Tulsa Golden Hurricane</td><td>Skelly Field at H.A. Chapman Stadium</td><td>43.95</td><td>4.74</td><td>10.86</td><td>4.36</td><td>17.44</td><td>2913</td><td>51.2</td><td>100</td></tr>
+          <tr><td>86</td><td>SMU Mustangs</td><td>Gerald J. Ford Stadium</td><td>43.85</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>3107</td><td>54.9</td><td>160</td></tr>
+          <tr><td>87</td><td>San Diego State Aztecs</td><td>Snapdragon Stadium</td><td>43.42</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>3398</td><td>63.7</td><td>150</td></tr>
+          <tr><td>88</td><td>UTEP Miners</td><td>Sun Bowl</td><td>42.8</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5000</td><td>52.6</td><td>120</td></tr>
+          <tr><td>89</td><td>FAU Owls</td><td>FAU Stadium</td><td>42.67</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>8571</td><td>55.6</td><td>90</td></tr>
+          <tr><td>90</td><td>Illinois Fighting Illini</td><td>Memorial Stadium (Illinois)</td><td>42.6</td><td>4.11</td><td>8.23</td><td>4.75</td><td>44.92</td><td>5890</td><td>60.1</td><td>220</td></tr>
+          <tr><td>91</td><td>Western Michigan Broncos</td><td>Waldo Stadium</td><td>42.56</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>4132</td><td>59.7</td><td>130</td></tr>
+          <tr><td>92</td><td>Texas State Bobcats</td><td>Bobcat Stadium</td><td>42.34</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>3226</td><td>54.8</td><td>120</td></tr>
+          <tr><td>93</td><td>Houston Cougars</td><td>TDECU Stadium</td><td>42.32</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>3854</td><td>55.8</td><td>90</td></tr>
+          <tr><td>94</td><td>South Alabama Jaguars</td><td>Hancock Whitney Stadium</td><td>41.83</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>7271</td><td>50.7</td><td>90</td></tr>
+          <tr><td>95</td><td>Cincinnati Bearcats</td><td>Nippert Stadium</td><td>41.83</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>3698</td><td>60.9</td><td>200</td></tr>
+          <tr><td>96</td><td>Ohio Bobcats</td><td>Peden Stadium</td><td>41.75</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>5625</td><td>61.7</td><td>140</td></tr>
+          <tr><td>97</td><td>USF Bulls</td><td>Raymond James Stadium</td><td>41.68</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>11818</td><td>46.9</td><td>110</td></tr>
+          <tr><td>98</td><td>UNLV Rebels</td><td>Allegiant Stadium</td><td>41.45</td><td>5.66</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6311</td><td>60.8</td><td>80</td></tr>
+          <tr><td>99</td><td>North Texas Mean Green</td><td>Apogee Stadium</td><td>41.35</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>3420</td><td>53.4</td><td>110</td></tr>
+          <tr><td>100</td><td>Rutgers Scarlet Knights</td><td>SHI Stadium</td><td>41.32</td><td>5.21</td><td>17.31</td><td>4.38</td><td>23.28</td><td>5961</td><td>46.7</td><td>230</td></tr>
+          <tr><td>101</td><td>UAB Blazers</td><td>Protective Stadium</td><td>41.28</td><td>5.29</td><td>16.4</td><td>4.36</td><td>17.44</td><td>4573</td><td>53.6</td><td>100</td></tr>
+          <tr><td>102</td><td>Wyoming Cowboys</td><td>War Memorial Stadium</td><td>41.24</td><td>7.2</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6211</td><td>62.5</td><td>180</td></tr>
+          <tr><td>103</td><td>Stanford Cardinal</td><td>Stanford Stadium</td><td>41.22</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>5730</td><td>58.6</td><td>110</td></tr>
+          <tr><td>104</td><td>ULM Warhawks</td><td>Malone Stadium</td><td>41.14</td><td>5.4</td><td>11.83</td><td>4.36</td><td>16.8</td><td>7891</td><td>43.8</td><td>80</td></tr>
+          <tr><td>105</td><td>Georgia Tech Yellow Jackets</td><td>Bobby Dodd Stadium</td><td>41.14</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>5040</td><td>49.8</td><td>100</td></tr>
+          <tr><td>106</td><td>Duke Blue Devils</td><td>Wallace Wade Stadium</td><td>41.0</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>3400</td><td>52.7</td><td>110</td></tr>
+          <tr><td>107</td><td>Sam Houston Bearkats</td><td>Elliott T. Bowers Stadium</td><td>40.87</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>5091</td><td>51.8</td><td>80</td></tr>
+          <tr><td>108</td><td>Boston College Eagles</td><td>Alumni Stadium</td><td>40.07</td><td>4.91</td><td>16.46</td><td>4.38</td><td>43.52</td><td>5057</td><td>58.3</td><td>160</td></tr>
+          <tr><td>109</td><td>Bowling Green Falcons</td><td>Doyt Perry Stadium</td><td>39.92</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>6994</td><td>57.5</td><td>120</td></tr>
+          <tr><td>110</td><td>Temple Owls</td><td>Lincoln Financial Field</td><td>39.64</td><td>5.8</td><td>13.67</td><td>4.38</td><td>26.08</td><td>12460</td><td>44.2</td><td>70</td></tr>
+          <tr><td>111</td><td>Old Dominion Monarchs</td><td>S.B. Ballard Stadium</td><td>39.55</td><td>4.54</td><td>16.55</td><td>4.36</td><td>16.64</td><td>2130</td><td>49.4</td><td>110</td></tr>
+          <tr><td>112</td><td>Miami (OH) RedHawks</td><td>Yager Stadium</td><td>39.34</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>6268</td><td>57.7</td><td>120</td></tr>
+          <tr><td>113</td><td>New Mexico State Aggies</td><td>Aggie Memorial Stadium</td><td>38.77</td><td>4.76</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6011</td><td>48.5</td><td>120</td></tr>
+          <tr><td>114</td><td>Toledo Rockets</td><td>Glass Bowl</td><td>38.76</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>2528</td><td>60.2</td><td>160</td></tr>
+          <tr><td>115</td><td>New Mexico Lobos</td><td>University Stadium</td><td>38.75</td><td>4.76</td><td>11.83</td><td>4.62</td><td>17.44</td><td>6807</td><td>48.5</td><td>100</td></tr>
+          <tr><td>116</td><td>Delaware Blue Hens</td><td>Delaware Stadium</td><td>38.37</td><td>5.13</td><td>17.32</td><td>4.36</td><td>17.44</td><td>2102</td><td>52.8</td><td>100</td></tr>
+          <tr><td>117</td><td>Middle Tennessee Blue Raiders</td><td>Johnny "Red" Floyd Stadium</td><td>38.32</td><td>6.01</td><td>14.27</td><td>4.36</td><td>22.72</td><td>3103</td><td>52.9</td><td>130</td></tr>
+          <tr><td>118</td><td>Northern Illinois Huskies</td><td>Huskie Stadium</td><td>38.05</td><td>4.11</td><td>8.23</td><td>4.75</td><td>44.92</td><td>5877</td><td>56.9</td><td>150</td></tr>
+          <tr><td>119</td><td>Nevada Wolf Pack</td><td>Mackay Stadium</td><td>37.84</td><td>5.66</td><td>11.83</td><td>4.62</td><td>17.44</td><td>2621</td><td>56.4</td><td>140</td></tr>
+          <tr><td>120</td><td>UConn Huskies</td><td>Pratt & Whitney Stadium at Rentschler Field</td><td>37.34</td><td>4.44</td><td>18.12</td><td>4.38</td><td>17.44</td><td>4318</td><td>47.9</td><td>60</td></tr>
+          <tr><td>121</td><td>Kennesaw State Owls</td><td>Fifth Third Bank Stadium</td><td>37.11</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>1159</td><td>50.6</td><td>80</td></tr>
+          <tr><td>122</td><td>Eastern Michigan Eagles</td><td>Rynearson Stadium</td><td>36.82</td><td>4.33</td><td>10.47</td><td>4.75</td><td>17.68</td><td>2976</td><td>54.2</td><td>90</td></tr>
+          <tr><td>123</td><td>Ball State Cardinals</td><td>Scheumann Stadium</td><td>36.42</td><td>4.55</td><td>10.6</td><td>4.75</td><td>17.44</td><td>2557</td><td>54.8</td><td>100</td></tr>
+          <tr><td>124</td><td>Rice Owls</td><td>Rice Stadium</td><td>36.17</td><td>5.43</td><td>13.86</td><td>4.36</td><td>18.88</td><td>4563</td><td>47.1</td><td>40</td></tr>
+          <tr><td>125</td><td>Charlotte 49ers</td><td>Jerry Richardson Stadium</td><td>35.55</td><td>4.33</td><td>15.71</td><td>4.36</td><td>26.84</td><td>1487</td><td>46.9</td><td>100</td></tr>
+          <tr><td>126</td><td>Vanderbilt Commodores</td><td>FirstBank Stadium</td><td>35.29</td><td>6.01</td><td>14.27</td><td>4.36</td><td>22.72</td><td>3917</td><td>50.3</td><td>70</td></tr>
+          <tr><td>127</td><td>Missouri State Bears</td><td>Plaster Stadium</td><td>35.25</td><td>4.63</td><td>9.36</td><td>4.75</td><td>17.44</td><td>1699</td><td>53.1</td><td>100</td></tr>
+          <tr><td>128</td><td>Hawaii Rainbow Warriors</td><td>Clarence T. C. Ching Athletics Complex</td><td>34.84</td><td>6.04</td><td>11.83</td><td>4.62</td><td>18.24</td><td>1475</td><td>59.1</td><td>90</td></tr>
+          <tr><td>129</td><td>Georgia State Panthers</td><td>Center Parc Stadium</td><td>34.51</td><td>5.06</td><td>14.56</td><td>4.36</td><td>19.12</td><td>2362</td><td>44.6</td><td>70</td></tr>
+          <tr><td>130</td><td>San José State Spartans</td><td>CEFCU Stadium</td><td>32.7</td><td>4.83</td><td>11.83</td><td>4.62</td><td>25.68</td><td>1767</td><td>52.9</td><td>70</td></tr>
+          <tr><td>131</td><td>Buffalo Bulls</td><td>UB Stadium</td><td>32.33</td><td>4.18</td><td>16.32</td><td>4.38</td><td>52.28</td><td>7147</td><td>47.2</td><td>70</td></tr>
+          <tr><td>132</td><td>Northwestern Wildcats</td><td>Ryan Field</td><td>32.31</td><td>4.11</td><td>8.23</td><td>4.75</td><td>44.92</td><td>1366</td><td>55.7</td><td>130</td></tr>
+          <tr><td>133</td><td>Florida International Panthers</td><td>Riccardo Silva Stadium</td><td>29.16</td><td>4.65</td><td>21.68</td><td>4.36</td><td>23.04</td><td>1942</td><td>44.8</td><td>60</td></tr>
+          <tr><td>134</td><td>Kent State Golden Flashes</td><td>Dix Stadium</td><td>28.91</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>2877</td><td>48.3</td><td>70</td></tr>
+          <tr><td>135</td><td>Massachusetts Minutemen</td><td>Warren McGuirk Alumni Stadium</td><td>28.68</td><td>4.91</td><td>16.46</td><td>4.38</td><td>43.52</td><td>3542</td><td>46.1</td><td>80</td></tr>
+          <tr><td>136</td><td>Akron Zips</td><td>InfoCision Stadium–Summa Field</td><td>27.84</td><td>5.13</td><td>12.24</td><td>4.75</td><td>17.44</td><td>5455</td><td>42.7</td><td>60</td></tr>
+          <tr class="dw-empty" style="display:none;"><td colspan="11">No matches found.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Optional footer brand name (left) -->
+  <div class="dw-footer" role="contentinfo">
+    <a class="dw-brand-left" href="#" aria-label="Brand name"></a>
+    <span></span>
+  </div>
+
+  <script>
+  (function(){
+    if(!window.DWTableInit){
+      window.DWTableInit = function init(root){
+        if(!root || root.dataset.dwInit==='1') return;
+        root.dataset.dwInit='1';
+
+        const table = root.querySelector('table.dw-table');
+        const tb = table ? table.tBodies[0] : null;
+        const scroller = root.querySelector('.dw-scroll');
+// Disable horizontal scrolling if the table has 4 or fewer columns
+if (table.tHead && table.tHead.rows[0].cells.length <= 4) {
+  scroller.classList.add('no-scroll');
+}
+        const controls = root.querySelector('.dw-controls');
+        if(!table || !tb || !scroller || !controls) return;
+
+        const field = controls.querySelector('.dw-field');
+        const searchInput = controls.querySelector('.dw-input');
+        const clearBtn = controls.querySelector('.dw-clear');
+        const statusEl = controls.querySelector('.dw-counter'); // hidden
+        const sizeSel = controls.querySelector('#dw-size');
+        const prevBtn = controls.querySelector('[data-page="prev"]');
+        const nextBtn = controls.querySelector('[data-page="next"]');
+        const emptyRow = tb.querySelector('.dw-empty');
+
+        /* record original order for "unsort" */
+        Array.from(tb.rows).forEach((r,i)=>{ if(!r.classList.contains('dw-empty')) r.dataset.idx=i; });
+
+        let pageSize = parseInt(sizeSel.value,10) || 10;  // 0 = All
+        let page = 1;
+        let filter = '';
+
+        /* header shadow while scrolled */
+        const onScrollShadow = ()=> scroller.classList.toggle('scrolled', scroller.scrollTop > 0);
+        scroller.addEventListener('scroll', onScrollShadow); onScrollShadow();
+
+        /* tri-state sorting */
+        const heads = Array.from(table.tHead.rows[0].cells);
+        heads.forEach((th,i)=>{
+          th.classList.add('sortable'); th.setAttribute('aria-sort','none'); th.dataset.sort='none'; th.tabIndex=0;
+          const type = th.dataset.type || 'text';
+          const go = ()=> sortBy(i,type,th);
+          th.addEventListener('click',go);
+          th.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+        });
+
+        function textOf(tr,i){ return (tr.children[i].innerText||'').trim(); }
+        function clearSortedClasses(){
+          heads.forEach(h=>h.classList.remove('is-sorted'));
+          Array.from(tb.rows).forEach(r=>Array.from(r.cells).forEach(c=>c.classList.remove('is-sorted')));
+        }
+        function markSortedColumn(colIdx){
+          heads[colIdx]?.classList.add('is-sorted');
+          Array.from(tb.rows).forEach(r=>{ const c=r.cells[colIdx]; if(c) c.classList.add('is-sorted'); });
+        }
+
+        function sortBy(colIdx, type, th){
+          const rows = Array.from(tb.rows).filter(r=>!r.classList.contains('dw-empty'));
+          const current = th.dataset.sort || 'none';
+          const next = current==='none' ? 'asc' : current==='asc' ? 'desc' : 'none';
+
+          heads.forEach(h=>{ h.dataset.sort='none'; h.setAttribute('aria-sort','none'); h.classList.remove('is-sorted'); });
+
+          if(next === 'none'){
+            rows.sort((a,b)=>(+a.dataset.idx)-(+b.dataset.idx));
+            rows.forEach(r=>tb.insertBefore(r, emptyRow));
+            clearSortedClasses();
+            renderPage();
+            return;
+          }
+
+          th.dataset.sort = next;
+          th.setAttribute('aria-sort', next==='asc'?'ascending':'descending');
+
+          const mul = next==='asc'?1:-1;
+          rows.sort((a,b)=>{
+            let v1=textOf(a,colIdx), v2=textOf(b,colIdx);
+            if((type||'text')==='num'){
+              v1=parseFloat(v1.replace(/[^0-9.\-]/g,'')); if(isNaN(v1)) v1=-Infinity;
+              v2=parseFloat(v2.replace(/[^0-9.\-]/g,'')); if(isNaN(v2)) v2=-Infinity;
+            }else{ v1=(v1+'').toLowerCase(); v2=(v2+'').toLowerCase(); }
+            if(v1>v2) return 1*mul; if(v1<v2) return -1*mul; return 0;
+          });
+          rows.forEach(r=>tb.insertBefore(r, emptyRow));
+          clearSortedClasses(); markSortedColumn(colIdx);
+          renderPage();
+        }
+
+        /* zebra */
+        function applyZebra(shown){
+          Array.from(tb.rows).forEach(r=>r.classList.remove('dw-zebra'));
+          shown.forEach((r,idx)=>{ if(idx % 2 === 0) r.classList.add('dw-zebra'); });
+        }
+
+        function matchesFilter(tr){ return !tr.classList.contains('dw-empty') && tr.innerText.toLowerCase().includes(filter); }
+
+        function renderPage(){
+          const ordered = Array.from(tb.rows).filter(r=>!r.classList.contains('dw-empty'));
+          const visible = ordered.filter(matchesFilter);
+          const total = visible.length;
+
+          ordered.forEach(r=>r.style.display='none');
+          let shown = [];
+
+          if(total===0){
+            if(emptyRow){ emptyRow.style.display='table-row'; emptyRow.firstElementChild.colSpan = heads.length; }
+            if(statusEl) statusEl.textContent = "";
+            prevBtn.disabled = nextBtn.disabled = true;
+          }else{
+            if(emptyRow) emptyRow.style.display='none';
+            if(pageSize===0){
+              shown = visible;
+              if(statusEl) statusEl.textContent = "";
+              prevBtn.disabled = nextBtn.disabled = true;
+            }else{
+              const pages = Math.max(1, Math.ceil(total / pageSize));
+              page = Math.min(Math.max(1, page), pages);
+              const start = (page-1)*pageSize, end = start + pageSize;
+              shown = visible.slice(start,end);
+              if(statusEl) statusEl.textContent = "";
+              prevBtn.disabled = page<=1; nextBtn.disabled = page>=pages;
+            }
+          }
+
+          shown.forEach(r=>r.style.display='table-row');
+          applyZebra(shown);
+        }
+
+        /* search + clear */
+        const syncClearBtn = ()=> field.classList.toggle('has-value', !!searchInput.value);
+        let t=null;
+        searchInput.addEventListener('input', e=>{
+          syncClearBtn();
+          clearTimeout(t);
+          t=setTimeout(()=>{ filter=(e.target.value||'').toLowerCase().trim(); page=1; renderPage(); },120);
+        });
+        clearBtn.addEventListener('click', ()=>{ searchInput.value=''; syncClearBtn(); filter=''; page=1; renderPage(); searchInput.focus(); });
+        syncClearBtn();
+
+        /* page size + nav */
+        sizeSel.addEventListener('change', e=>{ pageSize = parseInt(e.target.value,10) || 0; page=1; renderPage(); });
+        prevBtn.addEventListener('click', ()=>{ page--; renderPage(); });
+        nextBtn.addEventListener('click', ()=>{ page++; renderPage(); });
+
+        /* ---------- Config ---------- */
+        const LOGO_URL   = "https://i.postimg.cc/kGVJyXc1/VI-logo-final.png"; // CSB logo (mask)
+        const BRAND_NAME = "";
+        const BRAND_HREF = "";
+
+        // Top logo (not clickable) - set mask CSS var & show wrapper
+        const topWrap = root.querySelector('.dw-top-brand');
+        const topLogo = root.querySelector('.dw-top-logo');
+        if (LOGO_URL){
+          topLogo.style.setProperty('--logo-url', `url("${LOGO_URL}")`);
+          topWrap.style.display = "flex";
+        }
+        // Footer brand name (optional)
+        const footer = root.querySelector('.dw-footer');
+        const brandLeft = root.querySelector('.dw-brand-left');
+        if (BRAND_NAME){
+          brandLeft.textContent = BRAND_NAME;
+          if (BRAND_HREF) brandLeft.href = BRAND_HREF;
+          brandLeft.style.display = "inline-block";
+        } else {
+          footer.style.display = "none";
+        }
+        /* -------------------------------- */
+        renderPage();
+      };
+      document.querySelectorAll('[data-dw="table"]').forEach(root=>window.DWTableInit(root));
+    }
+    window.DWTableInit(document.getElementById('dw-lottery-5'));
+  })();
+  </script>
+</div>
+</section>
