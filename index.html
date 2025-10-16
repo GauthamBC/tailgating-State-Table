@@ -33,13 +33,36 @@
   }
 
   /* Controls layout */
-  #dw-lottery-2 .dw-controls{
-    display:grid; grid-template-columns:1fr auto 1fr; align-items:center;
-    gap:12px; margin:2px 0 10px 0;
-  }
-  #dw-lottery-2 .left{display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-start}
+  #dw-lottery-2 .dw-controls {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr; /* middle column auto-sizes */
+  align-items: center;
+  gap: 12px;
+  margin: 2px 0 10px 0;
+}
+  #dw-lottery-2 .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: nowrap; /* prevents wrapping until mobile breakpoint */
+}
   #dw-lottery-2 .center{justify-self:center; display:flex; align-items:center}
-  #dw-lottery-2 .right{display:flex; gap:8px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+ 
+ #dw-lottery-2 .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: nowrap;           /* keep items in one line */
+  white-space: nowrap;         /* prevent label/dropdown wrap */
+  min-width: 260px; 
+}
+
+#dw-lottery-2 .dw-status[for="dw-size"],
+#dw-lottery-2 .dw-select {
+  white-space: nowrap;
+}
 
   #dw-lottery-2 .dw-field{position:relative}
   #dw-lottery-2 .dw-input,#dw-lottery-2 .dw-select,#dw-lottery-2 .dw-btn{
@@ -85,6 +108,7 @@
     -webkit-mask: var(--logo-url) no-repeat center / contain;
             mask: var(--logo-url) no-repeat center / contain;
   }
+ background-color: var(--brand-500); /* faint gold tint for logo area */
 
   /* Card & table */
  /* Card & table */
@@ -176,7 +200,6 @@
 
   /* Scrollbar + height */
   #dw-lottery-2 .dw-scroll{max-height:var(--table-max-h,360px); overflow-y:auto; -ms-overflow-style:auto; scrollbar-width:thin; scrollbar-color:var(--scroll-thumb) transparent}
-  #dw-lottery-2 .dw-scroll::-webkit-scrollbar:horizontal{height:0; display:none}
   #dw-lottery-2 .dw-scroll::-webkit-scrollbar:vertical{width:var(--vbar-w)}
   #dw-lottery-2 .dw-scroll:hover::-webkit-scrollbar:vertical{width:var(--vbar-w-hover)}
   #dw-lottery-2 .dw-scroll::-webkit-scrollbar-thumb{background:var(--scroll-thumb); border-radius:9999px; border:2px solid transparent; background-clip:content-box}
@@ -215,45 +238,17 @@
     #dw-lottery-2 .dw-clear{width:20px; height:20px;}
     #dw-lottery-2 thead th{ font-size:13px; line-height:1.2; } /* tighter header on small screens */
     #dw-lottery-2 .dw-top-logo{height:22px; width:120px;}
-    #dw-lottery-2 .right{justify-content:flex-end; gap:6px;}
+    #dw-lottery-2 .right {
+  justify-content: flex-end;
+  gap: 6px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
     #dw-lottery-2 .right .dw-status{display:none;}
     #dw-lottery-2 .dw-select{min-width:68px; height:32px; padding:6px 22px 6px 8px; font-size:13px;}
     #dw-lottery-2 .dw-btn{width:32px; height:32px; padding:0; border-radius:12px; display:inline-flex; align-items:center; justify-content:center;}
   }
-     /* === Fix toolbar alignment (Rows/page + buttons stay in one row) === */
-#dw-lottery-2 .dw-controls .right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-wrap: nowrap !important;   /* prevent line breaks */
-  gap: 8px;
-  min-width: 0;
-}
-
-/* Prevent the label and dropdown from breaking apart */
-#dw-lottery-2 .dw-status[for="dw-size"],
-#dw-lottery-2 .dw-select {
-  white-space: nowrap;
-}
-
-/* Keep pagination buttons tightly grouped and aligned */
-#dw-lottery-2 .dw-btn[data-page] {
-  flex: 0 0 auto;
-  margin-left: 4px;
-}
-
-/* Responsive safeguard: if screen is too narrow, shrink dropdown first */
-@media (max-width: 480px) {
-  #dw-lottery-2 .dw-controls .right {
-    flex-wrap: wrap !important;
-    justify-content: center;
-  }
-  #dw-lottery-2 .dw-select {
-    min-width: 60px;
-  }
-}
-  </style>
-
+ </style>
   <!-- Controls -->
   <div class="dw-controls">
     <div class="left">
