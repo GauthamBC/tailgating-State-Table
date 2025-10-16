@@ -220,6 +220,38 @@
     #dw-lottery-2 .dw-select{min-width:68px; height:32px; padding:6px 22px 6px 8px; font-size:13px;}
     #dw-lottery-2 .dw-btn{width:32px; height:32px; padding:0; border-radius:12px; display:inline-flex; align-items:center; justify-content:center;}
   }
+     /* === Fix toolbar alignment (Rows/page + buttons stay in one row) === */
+#dw-lottery-2 .dw-controls .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap !important;   /* prevent line breaks */
+  gap: 8px;
+  min-width: 0;
+}
+
+/* Prevent the label and dropdown from breaking apart */
+#dw-lottery-2 .dw-status[for="dw-size"],
+#dw-lottery-2 .dw-select {
+  white-space: nowrap;
+}
+
+/* Keep pagination buttons tightly grouped and aligned */
+#dw-lottery-2 .dw-btn[data-page] {
+  flex: 0 0 auto;
+  margin-left: 4px;
+}
+
+/* Responsive safeguard: if screen is too narrow, shrink dropdown first */
+@media (max-width: 480px) {
+  #dw-lottery-2 .dw-controls .right {
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+  #dw-lottery-2 .dw-select {
+    min-width: 60px;
+  }
+}
   </style>
 
   <!-- Controls -->
